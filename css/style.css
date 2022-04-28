@@ -1,0 +1,7 @@
+@import url("/css/header.css");
+@import url("/css/footer.css");
+@import url("/css/main.css");
+
+html {
+  scroll-behavior: smooth; /*плавная прокрутка*/
+}
