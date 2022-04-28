@@ -1,11 +1,12 @@
 @font-face {
-  font-family: "montserratbold";
+  font-family: "Montserrat";
   src: url("montserrat-bold-webfont.eot");
   src: url("montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"),
     url("montserrat-bold-webfont.woff2") format("woff2"),
     url("montserrat-bold-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {

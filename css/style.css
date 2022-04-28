@@ -5,3 +5,9 @@
 html {
   scroll-behavior: smooth; /*плавная прокрутка*/
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background: #00479a;
+}
