@@ -63,3 +63,24 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 });
+
+let lectureBtn = document.getElementById("show");
+let univerBtn = document.getElementById("hide");
+
+const show = document.querySelector(".formLecture");
+const hide = document.querySelector(".formUniver");
+
+univerBtn.addEventListener("click", function () {
+  hide.style.display = "block";
+  show.style.display = "none";
+  univerBtn.classList.add("active");
+  lectureBtn.classList.remove("active");
+});
+
+lectureBtn.addEventListener("click", function () {
+  console.log(1);
+  hide.style.display = "none";
+  show.style.display = "block";
+  univerBtn.classList.remove("active");
+  lectureBtn.classList.add("active");
+});

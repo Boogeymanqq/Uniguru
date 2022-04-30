@@ -41,121 +41,123 @@
             universities across the world
           </p>
         </div>
-        <div class="show">
-          <form class="form" action="#" id="form">
-            <div class="form__title">
-              <p class="form__title-lec active">Lecturers</p>
-              <p class="form__title-univ">Univercity</p>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="formName"> Course Name </label>
-              <select class="form__select" name="name" id="formName">
-                <option value="it" selected>IT project management</option>
-                <option value="it-2">IT project management-2</option>
-                <option value="it-3">IT project management-3</option>
-              </select>
-            </div>
-            <div class="form__toggle">
-              <div class="form__toggle-online">
+        <div>
+          <div class="form__title">
+            <p id="show" class="form__title-lec active">Lecturers</p>
+            <p id="hide" class="form__title-univ">Univercity</p>
+          </div>
+          <div class="formLecture">
+            <form class="form" action="#" id="form">
+              <div class="form__item">
+                <label class="form__label" for="formName"> Course Name </label>
+                <select class="form__select" name="name" id="formName">
+                  <option value="it" selected>IT project management</option>
+                  <option value="it-2">IT project management-2</option>
+                  <option value="it-3">IT project management-3</option>
+                </select>
+              </div>
+              <div class="form__toggle">
+                <div class="form__toggle-online">
+                  <input
+                    id="onln"
+                    type="radio"
+                    name="radio"
+                    value="off"
+                    checked
+                  />
+                  <label class="form__toggle-label" for="onln">Online</label>
+                </div>
+                <div class="form__toggle-online">
+                  <input id="ofln" type="radio" name="radio" value="on" />
+                  <label class="form__toggle-label" for="ofln">Offline</label>
+                </div>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="formType"> Type </label>
+                <select class="form__select" name="type" id="formType">
+                  <option value="Semester" selected>Semester</option>
+                  <option value="Semester-2">Semester-2</option>
+                  <option value="Semester-3">Semester-3</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="formCountry"> Country </label>
+                <select class="form__select" name="country" id="formCountry">
+                  <option value="Vietnam" selected>Vietnam</option>
+                  <option value="Vietnam-2">Vietnam-2</option>
+                  <option value="Vietnam-3">Vietnam-3</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <label for="formEmail " class="form__label"> Email </label>
                 <input
-                  id="onln"
-                  type="radio"
-                  name="radio"
-                  value="off"
-                  checked
+                  class="form__email _req _email"
+                  name="email"
+                  id="formEmail"
+                  type="email"
                 />
-                <label class="form__toggle-label" for="onln">Online</label>
               </div>
-              <div class="form__toggle-online">
-                <input id="ofln" type="radio" name="radio" value="on" />
-                <label class="form__toggle-label" for="ofln">Offline</label>
-              </div>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="formType"> Type </label>
-              <select class="form__select" name="type" id="formType">
-                <option value="Semester" selected>Semester</option>
-                <option value="Semester-2">Semester-2</option>
-                <option value="Semester-3">Semester-3</option>
-              </select>
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="formCountry"> Country </label>
-              <select class="form__select" name="country" id="formCountry">
-                <option value="Vietnam" selected>Vietnam</option>
-                <option value="Vietnam-2">Vietnam-2</option>
-                <option value="Vietnam-3">Vietnam-3</option>
-              </select>
-            </div>
-            <div class="form__item">
-              <label for="formEmail " class="form__label"> Email </label>
-              <input
-                class="form__email _req _email"
-                name="email"
-                id="formEmail"
-                type="email"
-              />
-            </div>
-            <button type="submit" class="disciplines__btn">Submit</button>
-          </form>
-        </div>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
 
-        <div class="hide">
-          <form class="form" action="#" id="form">
-            <div class="form__item">
-              <label for="formUniv" class="form__label"> Univercity </label>
-              <input
-                class="form__email _req"
-                name="Univercity"
-                id="formUniv"
-                type="text"
-              />
-            </div>
-            <div class="form__item">
-              <label for="formDep" class="form__label"> Department </label>
-              <input
-                class="form__email _req"
-                name="Department"
-                id="formDep"
-                type="text"
-              />
-            </div>
-            <div class="form__item">
-              <label for="formName" class="form__label"> Your Name </label>
-              <input
-                class="form__email _req"
-                name="name"
-                id="formName"
-                type="text"
-              />
-            </div>
-            <div class="form__item">
-              <label for="formPos" class="form__label"> Position </label>
-              <input
-                class="form__email _req"
-                name="position"
-                id="formPos"
-                type="text"
-              />
-            </div>
-            <div class="form__item last">
-              <label for="formEmail" class="form__label"> Email </label>
-              <input
-                class="form__email _req _email"
-                name="email"
-                id="formEmail"
-                type="email"
-              />
-            </div>
-            <button type="submit" class="disciplines__btn">Submit</button>
-          </form>
+          <div class="formUniver">
+            <form class="form" action="#" id="form">
+              <div class="form__item">
+                <label for="formUniv" class="form__label"> Univercity </label>
+                <input
+                  class="form__email _req"
+                  name="Univercity"
+                  id="formUniv"
+                  type="text"
+                />
+              </div>
+              <div class="form__item">
+                <label for="formDep" class="form__label"> Department </label>
+                <input
+                  class="form__email _req"
+                  name="Department"
+                  id="formDep"
+                  type="text"
+                />
+              </div>
+              <div class="form__item">
+                <label for="formName" class="form__label"> Your Name </label>
+                <input
+                  class="form__email _req"
+                  name="name"
+                  id="formName"
+                  type="text"
+                />
+              </div>
+              <div class="form__item">
+                <label for="formPos" class="form__label"> Position </label>
+                <input
+                  class="form__email _req"
+                  name="position"
+                  id="formPos"
+                  type="text"
+                />
+              </div>
+              <div class="form__item last">
+                <label for="formEmail" class="form__label"> Email </label>
+                <input
+                  class="form__email _req _email"
+                  name="email"
+                  id="formEmail"
+                  type="email"
+                />
+              </div>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
         </div>
       </section>
       <section id="disciplines">
         <h2 class="disciplines__title">Disciplines</h2>
         <div class="disciplines__cards">
           <div class="disciplines__card">
-            <img src="/img/1.png" alt="" />
+            <img src="/Uniguru/img/disciplines/image-data.jpg" alt="" />
             <p class="disciplines__card-title">Data Science</p>
             <ul class="disciplines__list">
               <li>Quantitative methods</li>
@@ -165,10 +167,10 @@
               <li>Machine Learning</li>
               <li>Python programming</li>
             </ul>
-            <button class="disciplines__btn"><a href="#form">Apply</a></button>
+            <button class="btn"><a href="#form">Apply</a></button>
           </div>
           <div class="disciplines__card">
-            <img src="/img/Rectangle 2.png" alt="" />
+            <img src="/Uniguru/img/disciplines/image-design.jpg" alt="" />
             <p class="disciplines__card-title">Design</p>
             <ul class="disciplines__list">
               <li>UX/UI</li>
@@ -178,10 +180,10 @@
               <li>Brand management</li>
               <li>Design patterns</li>
             </ul>
-            <button class="disciplines__btn"><a href="#form">Apply</a></button>
+            <button class="btn"><a href="#form">Apply</a></button>
           </div>
           <div class="disciplines__card">
-            <img src="/img/Rectangle 3.png" alt="" />
+            <img src="/Uniguru/img/disciplines/image-bitcoin.jpg" alt="" />
             <p class="disciplines__card-title">Cryptography</p>
             <ul class="disciplines__list">
               <li>Applied cryptography</li>
@@ -191,12 +193,12 @@
               <li>Blockchain technology</li>
               <li>Cryptocurrencies</li>
             </ul>
-            <button class="disciplines__btn"><a href="#form">Apply</a></button>
+            <button class="btn"><a href="#form">Apply</a></button>
           </div>
         </div>
         <div class="disciplines__cards">
           <div class="disciplines__card">
-            <img src="/img/Rectangle 4.png" alt="" />
+            <img src="/Uniguru/img/disciplines/image-startup.jpg" alt="" />
             <p class="disciplines__card-title">Startups</p>
             <ul class="disciplines__list">
               <li>Product management</li>
@@ -206,10 +208,10 @@
               <li>Strategic planning</li>
               <li>Team leadership</li>
             </ul>
-            <button class="disciplines__btn"><a href="#form">Apply</a></button>
+            <button class="btn"><a href="#form">Apply</a></button>
           </div>
           <div class="disciplines__card">
-            <img src="/img/Rectangle 5.png" alt="" />
+            <img src="/Uniguru/img/disciplines/image-it.jpg" alt="" />
             <p class="disciplines__card-title">IT</p>
             <ul class="disciplines__list">
               <li>Software/application development</li>
@@ -219,7 +221,7 @@
               <li>Technical support</li>
               <li>Network management</li>
             </ul>
-            <button class="disciplines__btn"><a href="#form">Apply</a></button>
+            <button class="btn"><a href="#form">Apply</a></button>
           </div>
         </div>
       </section>
@@ -240,33 +242,33 @@
         </h2>
         <div class="steps__items">
           <div class="steps__item">
-            <img src="/img/1.svg" alt="" />
+            <img src="./img/steps/1.svg" alt="" />
             <div class="steps__icon-1">
-              <img src="/img/pen.svg" alt="" />
+              <img src="./img/steps/icon-pencil.svg" alt="" />
             </div>
             <p class="steps__text-1">
               Fill in application form and sign a contract
             </p>
           </div>
           <div class="steps__arrow">
-            <img src="/img/arrow.svg" alt="" />
+            <img src="./img/steps/icon-arrow.svg" alt="" />
           </div>
           <div class="steps__item">
-            <img src="/img/2.svg" alt="" />
+            <img src="./img/steps/2.svg" alt="" />
             <div class="steps__icon-2">
-              <img src="/img/file.svg" alt="" />
+              <img src="./img/steps/icon-list.svg" alt="" />
             </div>
             <p class="steps__text-2">
               Review list of candidates and define specific requirements
             </p>
           </div>
           <div class="steps__arrow">
-            <img src="/img/arrow.svg" alt="" />
+            <img src="./img/steps/icon-arrow.svg" alt="" />
           </div>
           <div class="steps__item">
-            <img src="/img/3.svg" alt="" />
+            <img src="./img/steps/3.svg" alt="" />
             <div class="steps__icon-3">
-              <img src="/img/plus.svg" alt="" />
+              <img src="./img/steps/icon-plus.svg" alt="" />
             </div>
             <p class="steps__text-3">
               Make a final choice from a short list of candidates
@@ -433,7 +435,11 @@
         <h2 class="team__title">Project Team</h2>
         <div class="team__cards">
           <div class="team__card">
-            <img src="/img/Veronika.png" alt="" class="team__image" />
+            <img
+              src="../Uniguru/img/team/HR_consultant.png"
+              alt=""
+              class="team__image"
+            />
             <p class="team__name">Veronika Soboleva</p>
             <ul class="team__list">
               <li>HR consultant for leading IT companies</li>
@@ -442,7 +448,11 @@
             </ul>
           </div>
           <div class="team__card">
-            <img src="/img/Pavel.png" alt="" class="team__image" />
+            <img
+              src="../Uniguru/img/team/Startup_consultant.png"
+              alt=""
+              class="team__image"
+            />
             <p class="team__name">Pavel Peng</p>
             <ul class="team__list">
               <li>Launched startups in China and Russia</li>

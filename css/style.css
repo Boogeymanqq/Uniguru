@@ -21,6 +21,7 @@ a {
 
 .btn {
   display: block;
+  margin: 0 auto 37px;
   padding: 0.3em 4.1em 0.25em 3.9em;
   font-size: 1em;
   font-weight: 500;
@@ -30,7 +31,8 @@ a {
   border: 0;
   border-radius: 3.75em;
   outline: none;
-  background: #0074e8;
+  background: var(--button-background);
+  color: var(--primary-color);
   cursor: pointer;
 }
 
