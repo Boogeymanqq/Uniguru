@@ -4,36 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/portfolio.css" />
     <title>UNIGURU</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
+    <header>
+      <div class="container">
         <nav>
           <ul class="list">
-            <li class="items"><a href="#disciplines"></a></li>
-            <li class="items"><a href="#models"></a></li>
-            <li class="items"><a href="#portfolio"></a></li>
-            <li class="items"><a href="#team"></a></li>
+            <li class="items"><a href="#disciplines">Disciplines</a></li>
+            <li class="items"><a href="#models">Involvement Models</a></li>
+            <li class="items"><a href="#portfolio">Portfolio</a></li>
+            <li class="items"><a href="#team">Project Team</a></li>
           </ul>
         </nav>
-      </header>
-      <main>
-        <section id="feedback">
-          <h1>title</h1>
-          <form class="form"></form>
-        </section>
-        <section id="disciplines"></section>
-        <section id="models"></section>
-        <section id="steps"></section>
-        <section id="portfolio"></section>
-        <section id="team"></section>
-      </main>
-      <footer>
-        <a class="email" href="mailto:anatolykostarev@gmail.com"></a>
-      </footer>
-    </div>
+      </div>
+    </header>
+    <main>
+      <section id="feedback">
+        <h1>title</h1>
+        <form class="form"></form>
+      </section>
+      <section id="disciplines"></section>
+      <section id="models"></section>
+      <section id="steps"></section>
+      <section id="portfolio">
+        <div class="container">
+          <h2 class="portfolio__title">Portfolio</h2>
+          <div class="slider">
+            <div class="portfolio__cards">
+              <div class="portfolio__card">
+                <div class="portfolio__header">
+                  <h3>Teacher 1</h3>
+                  <img
+                    src="/img/portfolio/icon-portfolio_logo.svg"
+                    alt="logo"
+                    width="40"
+                    height="61"
+                  />
+                </div>
+                <div class="portfolio__description">
+                  <p>Discipline</p>
+                  <p>IT</p>
+                  <p>Course</p>
+                  <p>Data Science</p>
+                  <p>Experience</p>
+                  <p>
+                    5+ years of leading data science project in Google and
+                    Airbnb
+                  </p>
+                  <p>Language</p>
+                  <p>English</p>
+                  <p>Envolvement</p>
+                  <p>mentorship and short-term</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team"></section>
+    </main>
+    <footer>
+      <a class="email" href="mailto:anatolykostarev@gmail.com"></a>
+    </footer>
+    <script src="/js/script.js" type="module"></script>
   </body>
 </html>
