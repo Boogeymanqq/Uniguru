@@ -1,0 +1,55 @@
+#disciplines {
+  padding: 143px 0 135px;
+  display: grid;
+  grid-column: 2 / 3;
+  row-gap: 30px;
+  /* justify-content: space-between; */
+}
+
+.disciplines__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+.disciplines__cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 373px));
+  /* grid-auto-columns: ; */
+  row-gap: 40px;
+  column-gap: 40px;
+}
+.disciplines__card {
+  grid-auto-rows: 1fr;
+  background: #ffffff;
+}
+
+.disciplines__card-title {
+  margin: 24px 0 0 32px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #003e7c;
+}
+.disciplines__list {
+  margin: 7px 0 25px 52px;
+  line-height: 30px;
+  color: #003e7c;
+}
+.disciplines__btn {
+  margin: 0 auto 37px;
+  padding: 5px 0;
+  display: block;
+  width: 188px;
+  background: #0074e8;
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}

@@ -1,0 +1,111 @@
+#feedback {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column: 2 / 3;
+  justify-content: space-between;
+  grid-template-columns: 1fr minmax(auto, 572px);
+}
+
+.form {
+}
+.form__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+.form__title-lec {
+  width: 162px;
+  /* background: url("/img/Polygon.svg") 50px 100px no-repeat; */
+}
+
+.active {
+  width: 162px;
+  background-color: #0074e8;
+}
+
+.form__title-univ {
+  width: 162px;
+}
+.form__item {
+  margin: 22px 0;
+}
+.form__label {
+  display: inline-block;
+  width: 125px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #c4c4c4;
+}
+
+.form__select {
+  width: 438px;
+  padding: 12px 0 10px 23px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #64607d;
+  background: #eeeeee;
+}
+
+.form__email {
+  width: 438px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #64607d;
+  background: #eeeeee;
+  padding: 7px 0 4px 23px;
+}
+
+.form__toggle {
+  margin-left: 127px;
+  display: flex;
+  background: #eeeeee;
+  max-width: 150px;
+  border-radius: 20px;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #64607d;
+}
+
+.form__toggle-online {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.form__toggle-label {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  padding: 6px;
+  user-select: none;
+  border-radius: 20px;
+}
+
+input[type="radio"]:checked + .form__toggle-label {
+  background: #0074e8;
+  color: #ffffff;
+}
+
+.last {
+  margin-bottom: 58px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.form__email.error {
+  box-shadow: 0 0 15px red;
+}

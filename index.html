@@ -7,66 +7,328 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/feedback.css" />
+    <link rel="stylesheet" href="/css/disciplines.css" />
+    <link rel="stylesheet" href="/css/models.css" />
+    <link rel="stylesheet" href="/css/steps.css" />
     <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="stylesheet" href="/css/team.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
     <title>UNIGURU</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav>
-          <ul class="list">
-            <li class="items"><a href="#disciplines">Disciplines</a></li>
-            <li class="items"><a href="#models">Involvement Models</a></li>
-            <li class="items"><a href="#portfolio">Portfolio</a></li>
-            <li class="items"><a href="#team">Project Team</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul class="list">
+          <li class="items"><a href="#disciplines">Disciplines</a></li>
+          <li class="items"><a href="#models">Involvement Models</a></li>
+          <li class="items"><a href="#portfolio">Portfolio</a></li>
+          <li class="items"><a href="#team">Project Team</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section id="feedback">
-        <h1>title</h1>
-        <form class="form"></form>
+        <div class="feedback__text">
+          <h1>title</h1>
+          <p>A Space Of Modern Education</p>
+          <p>
+            Mission: find lecturers and mentors from leading companies and
+            universities across the world
+          </p>
+        </div>
+        <div class="show">
+          <form class="form" action="#" id="form">
+            <div class="form__title">
+              <p class="form__title-lec active">Lecturers</p>
+              <p class="form__title-univ">Univercity</p>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="formName"> Course Name </label>
+              <select class="form__select" name="name" id="formName">
+                <option value="it" selected>IT project management</option>
+                <option value="it-2">IT project management-2</option>
+                <option value="it-3">IT project management-3</option>
+              </select>
+            </div>
+            <div class="form__toggle">
+              <div class="form__toggle-online">
+                <input
+                  id="onln"
+                  type="radio"
+                  name="radio"
+                  value="off"
+                  checked
+                />
+                <label class="form__toggle-label" for="onln">Online</label>
+              </div>
+              <div class="form__toggle-online">
+                <input id="ofln" type="radio" name="radio" value="on" />
+                <label class="form__toggle-label" for="ofln">Offline</label>
+              </div>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="formType"> Type </label>
+              <select class="form__select" name="type" id="formType">
+                <option value="Semester" selected>Semester</option>
+                <option value="Semester-2">Semester-2</option>
+                <option value="Semester-3">Semester-3</option>
+              </select>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="formCountry"> Country </label>
+              <select class="form__select" name="country" id="formCountry">
+                <option value="Vietnam" selected>Vietnam</option>
+                <option value="Vietnam-2">Vietnam-2</option>
+                <option value="Vietnam-3">Vietnam-3</option>
+              </select>
+            </div>
+            <div class="form__item">
+              <label for="formEmail " class="form__label"> Email </label>
+              <input
+                class="form__email _req _email"
+                name="email"
+                id="formEmail"
+                type="email"
+              />
+            </div>
+            <button type="submit" class="disciplines__btn">Submit</button>
+          </form>
+        </div>
+
+        <div class="hide">
+          <form class="form" action="#" id="form">
+            <div class="form__item">
+              <label for="formUniv" class="form__label"> Univercity </label>
+              <input
+                class="form__email _req"
+                name="Univercity"
+                id="formUniv"
+                type="text"
+              />
+            </div>
+            <div class="form__item">
+              <label for="formDep" class="form__label"> Department </label>
+              <input
+                class="form__email _req"
+                name="Department"
+                id="formDep"
+                type="text"
+              />
+            </div>
+            <div class="form__item">
+              <label for="formName" class="form__label"> Your Name </label>
+              <input
+                class="form__email _req"
+                name="name"
+                id="formName"
+                type="text"
+              />
+            </div>
+            <div class="form__item">
+              <label for="formPos" class="form__label"> Position </label>
+              <input
+                class="form__email _req"
+                name="position"
+                id="formPos"
+                type="text"
+              />
+            </div>
+            <div class="form__item last">
+              <label for="formEmail" class="form__label"> Email </label>
+              <input
+                class="form__email _req _email"
+                name="email"
+                id="formEmail"
+                type="email"
+              />
+            </div>
+            <button type="submit" class="disciplines__btn">Submit</button>
+          </form>
+        </div>
       </section>
-      <section id="disciplines"></section>
-      <section id="models"></section>
-      <section id="steps"></section>
+      <section id="disciplines">
+        <h2 class="disciplines__title">Disciplines</h2>
+        <div class="disciplines__cards">
+          <div class="disciplines__card">
+            <img src="/img/1.png" alt="" />
+            <p class="disciplines__card-title">Data Science</p>
+            <ul class="disciplines__list">
+              <li>Quantitative methods</li>
+              <li>Probability</li>
+              <li>Linear regression</li>
+              <li>Artificial Intelligence</li>
+              <li>Machine Learning</li>
+              <li>Python programming</li>
+            </ul>
+            <button class="disciplines__btn"><a href="#form">Apply</a></button>
+          </div>
+          <div class="disciplines__card">
+            <img src="/img/Rectangle 2.png" alt="" />
+            <p class="disciplines__card-title">Design</p>
+            <ul class="disciplines__list">
+              <li>UX/UI</li>
+              <li>Visual communications</li>
+              <li>Industrial design</li>
+              <li>Interaction design</li>
+              <li>Brand management</li>
+              <li>Design patterns</li>
+            </ul>
+            <button class="disciplines__btn"><a href="#form">Apply</a></button>
+          </div>
+          <div class="disciplines__card">
+            <img src="/img/Rectangle 3.png" alt="" />
+            <p class="disciplines__card-title">Cryptography</p>
+            <ul class="disciplines__list">
+              <li>Applied cryptography</li>
+              <li>Cyber Security</li>
+              <li>Information theory</li>
+              <li>Computer security models</li>
+              <li>Blockchain technology</li>
+              <li>Cryptocurrencies</li>
+            </ul>
+            <button class="disciplines__btn"><a href="#form">Apply</a></button>
+          </div>
+        </div>
+        <div class="disciplines__cards">
+          <div class="disciplines__card">
+            <img src="/img/Rectangle 4.png" alt="" />
+            <p class="disciplines__card-title">Startups</p>
+            <ul class="disciplines__list">
+              <li>Product management</li>
+              <li>Venture financing</li>
+              <li>Team motivation</li>
+              <li>Project management</li>
+              <li>Strategic planning</li>
+              <li>Team leadership</li>
+            </ul>
+            <button class="disciplines__btn"><a href="#form">Apply</a></button>
+          </div>
+          <div class="disciplines__card">
+            <img src="/img/Rectangle 5.png" alt="" />
+            <p class="disciplines__card-title">IT</p>
+            <ul class="disciplines__list">
+              <li>Software/application development</li>
+              <li>Microservices</li>
+              <li>Cloud computing</li>
+              <li>Control systems</li>
+              <li>Technical support</li>
+              <li>Network management</li>
+            </ul>
+            <button class="disciplines__btn"><a href="#form">Apply</a></button>
+          </div>
+        </div>
+      </section>
+      <section id="models">
+        <h2 class="models__title">Involvement models</h2>
+        <ul class="models__list">
+          <li class="models__item">Semester</li>
+          <li class="models__item">Short-term (2-4 weeks)</li>
+          <li class="models__item">Mentorship</li>
+          <li class="models__item">Event</li>
+        </ul>
+        <p class="models__text">All models can be both on-site and online</p>
+      </section>
+      <section id="steps">
+        <h2 class="steps__title">
+          3 easy steps to connect your students with best experts across the
+          world:
+        </h2>
+        <div class="steps__items">
+          <div class="steps__item">
+            <img src="/img/1.svg" alt="" />
+            <div class="steps__icon-1">
+              <img src="/img/pen.svg" alt="" />
+            </div>
+            <p class="steps__text-1">
+              Fill in application form and sign a contract
+            </p>
+          </div>
+          <div class="steps__arrow">
+            <img src="/img/arrow.svg" alt="" />
+          </div>
+          <div class="steps__item">
+            <img src="/img/2.svg" alt="" />
+            <div class="steps__icon-2">
+              <img src="/img/file.svg" alt="" />
+            </div>
+            <p class="steps__text-2">
+              Review list of candidates and define specific requirements
+            </p>
+          </div>
+          <div class="steps__arrow">
+            <img src="/img/arrow.svg" alt="" />
+          </div>
+          <div class="steps__item">
+            <img src="/img/3.svg" alt="" />
+            <div class="steps__icon-3">
+              <img src="/img/plus.svg" alt="" />
+            </div>
+            <p class="steps__text-3">
+              Make a final choice from a short list of candidates
+            </p>
+          </div>
+        </div>
+      </section>
       <section id="portfolio">
-        <div class="container">
-          <h2 class="portfolio__title">Portfolio</h2>
-          <div class="slider">
-            <div class="portfolio__cards">
-              <div class="portfolio__card">
-                <div class="portfolio__header">
-                  <h3>Teacher 1</h3>
-                  <img
-                    src="/img/portfolio/icon-portfolio_logo.svg"
-                    alt="logo"
-                    width="40"
-                    height="61"
-                  />
-                </div>
-                <div class="portfolio__description">
-                  <p>Discipline</p>
-                  <p>IT</p>
-                  <p>Course</p>
-                  <p>Data Science</p>
-                  <p>Experience</p>
-                  <p>
-                    5+ years of leading data science project in Google and
-                    Airbnb
-                  </p>
-                  <p>Language</p>
-                  <p>English</p>
-                  <p>Envolvement</p>
-                  <p>mentorship and short-term</p>
-                </div>
+        <h2 class="portfolio__title">Portfolio</h2>
+        <div class="slider">
+          <div class="portfolio__cards">
+            <div class="portfolio__card">
+              <div class="portfolio__header">
+                <h3>Teacher 1</h3>
+                <img
+                  src="/img/portfolio/icon-portfolio_logo.svg"
+                  alt="logo"
+                  width="40"
+                  height="61"
+                />
+              </div>
+              <div class="portfolio__description">
+                <p>Discipline</p>
+                <p>IT</p>
+                <p>Course</p>
+                <p>Data Science</p>
+                <p>Experience</p>
+                <p>
+                  5+ years of leading data science project in Google and Airbnb
+                </p>
+                <p>Language</p>
+                <p>English</p>
+                <p>Envolvement</p>
+                <p>mentorship and short-term</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="team"></section>
+      <section id="team">
+        <h2 class="team__title">Project Team</h2>
+        <div class="team__cards">
+          <div class="team__card">
+            <img src="/img/Veronika.png" alt="" class="team__image" />
+            <p class="team__name">Veronika Soboleva</p>
+            <ul class="team__list">
+              <li>HR consultant for leading IT companies</li>
+              <li>Launched new University in Barcelona</li>
+              <li>Developed international IT competition</li>
+            </ul>
+          </div>
+          <div class="team__card">
+            <img src="/img/Pavel.png" alt="" class="team__image" />
+            <p class="team__name">Pavel Peng</p>
+            <ul class="team__list">
+              <li>Launched startups in China and Russia</li>
+              <li>5+ years in consulting</li>
+              <li>
+                7+ years in top management roles in Airlines and Agriculture
+                companies
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <a class="email" href="mailto:anatolykostarev@gmail.com"></a>

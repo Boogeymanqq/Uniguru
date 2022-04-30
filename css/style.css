@@ -3,16 +3,16 @@ html {
 }
 
 body {
+  display: grid;
+  grid-template: minmax(auto, 20px) 1fr minmax(auto, 60px) / 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
   font-family: var(--primary-font);
   font-weight: 400;
   background: var(--primary-background);
   color: var(--primary-color);
-}
-
-.container {
-  max-width: 75em;
-  margin: 0 auto;
-  box-sizing: content-box;
 }
 
 a {
