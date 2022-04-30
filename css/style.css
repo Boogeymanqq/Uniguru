@@ -7,7 +7,28 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  padding: 49px 0 172px 0;
+  display: grid;
+  grid-template: minmax(auto, 20px) 1fr minmax(auto, 60px) / 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  font-style: normal;
   background: #00479a;
+  color: #f9f9f9;
 }
+
+/* .wrapper {
+  min-height: 100vh;
+  padding: 49px 0 172px 0;
+  display: grid;
+  grid-template: minmax(auto, 20px) 1fr minmax(auto, 60px) / 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+} */
