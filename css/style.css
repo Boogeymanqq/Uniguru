@@ -1,13 +1,145 @@
-@import url("/css/header.css");
-@import url("/css/footer.css");
-@import url("/css/main.css");
-
 html {
-  scroll-behavior: smooth; /*плавная прокрутка*/
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 400;
-  background: #00479a;
+  background: var(--primary-background);
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 75em;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: block;
+  padding: 0.3em 4.1em 0.25em 3.9em;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.875em;
+  letter-spacing: -0.02em;
+  text-align: center;
+  border: 0;
+  border-radius: 3.75em;
+  outline: none;
+  background: #0074e8;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0074e8e2;
+}
+
+.btn:focus {
+  background: #0074e8be;
+}
+
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --primary-color: #fff;
+  --secondary-color: #f9f9f9;
+  --primary-background: #00479a;
+  --secondary_background: #003e7c;
+  --button-background: #0074e8;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/MontserratLight.woff2") format("woff2"),
+    url("../fonts/MontserratLight.woff") format("woff"),
+    url("../fonts/MontserratLight.ttf") format("truetype"),
+    url("../fonts/MontserratLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/MontserratRegular.woff2") format("woff2"),
+    url("../fonts/MontserratRegular.woff") format("woff"),
+    url("../fonts/MontserratRegular.ttf") format("truetype"),
+    url("../fonts/MontserratRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/MontserratMedium.woff2") format("woff2"),
+    url("../fonts/MontserratMedium.woff") format("woff"),
+    url("../fonts/MontserratMedium.ttf") format("truetype"),
+    url("../fonts/MontserratMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/MontserratSemiBold.woff2") format("woff2"),
+    url("../fonts/MontserratSemiBold.woff") format("woff"),
+    url("../fonts/MontserratSemiBold.ttf") format("truetype"),
+    url("../fonts/MontserratSemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/MontserratBold.woff2") format("woff2"),
+    url("../fonts/MontserratBold.woff") format("woff"),
+    url("../fonts/MontserratBold.ttf") format("truetype"),
+    url("../fonts/MontserratBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/MontserratExtraBold.woff2") format("woff2"),
+    url("../fonts/MontserratExtraBold.woff") format("woff"),
+    url("../fonts/MontserratExtraBold.ttf") format("truetype"),
+    url("../fonts/MontserratExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/MontserratBlack.woff2") format("woff2"),
+    url("../fonts/MontserratBlack.woff") format("woff"),
+    url("../fonts/MontserratBlack.ttf") format("truetype"),
+    url("../fonts/MontserratBlack.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  unicode-range: U+0020-2044;
 }
