@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/feedback.css" />
-    <link rel="stylesheet" href="./css/disciplines.css" />
-    <link rel="stylesheet" href="./css/models.css" />
-    <link rel="stylesheet" href="./css/steps.css" />
-    <link rel="stylesheet" href="./css/portfolio.css" />
-    <link rel="stylesheet" href="./css/team.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/feedback.css" />
+    <link rel="stylesheet" href="/css/disciplines.css" />
+    <link rel="stylesheet" href="/css/models.css" />
+    <link rel="stylesheet" href="/css/steps.css" />
+    <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="stylesheet" href="/css/team.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+
     <title>UNIGURU</title>
   </head>
   <body>
@@ -44,7 +47,7 @@
             <p id="hide" class="form__title-univ">Univercity</p>
           </div>
           <div class="formLecture">
-            <form class="form" action="#" id="form">
+            <form class="form" action="#" method="post" id="form">
               <div class="form__item">
                 <label class="form__label" for="formName"> Course Name </label>
                 <select class="form__select" name="name" id="formName">
@@ -99,7 +102,7 @@
           </div>
 
           <div class="formUniver">
-            <form class="form" action="#" id="form">
+            <form class="form" action="#" method="post" id="form">
               <div class="form__item">
                 <label for="formUniv" class="form__label"> Univercity </label>
                 <input
@@ -154,7 +157,7 @@
         <h2 class="disciplines__title">Disciplines</h2>
         <div class="disciplines__cards">
           <div class="disciplines__card">
-            <img src="/Uniguru/img/disciplines/image-data.jpg" alt="" />
+            <img src="/img/disciplines/image-data.jpg" alt="" />
             <p class="disciplines__card-title">Data Science</p>
             <ul class="disciplines__list">
               <li>Quantitative methods</li>
@@ -167,7 +170,7 @@
             <button class="btn"><a href="#form">Apply</a></button>
           </div>
           <div class="disciplines__card">
-            <img src="/Uniguru/img/disciplines/image-design.jpg" alt="" />
+            <img src="/img/disciplines/image-design.jpg" alt="" />
             <p class="disciplines__card-title">Design</p>
             <ul class="disciplines__list">
               <li>UX/UI</li>
@@ -180,7 +183,7 @@
             <button class="btn"><a href="#form">Apply</a></button>
           </div>
           <div class="disciplines__card">
-            <img src="/Uniguru/img/disciplines/image-bitcoin.jpg" alt="" />
+            <img src="/img/disciplines/image-bitcoin.jpg" alt="" />
             <p class="disciplines__card-title">Cryptography</p>
             <ul class="disciplines__list">
               <li>Applied cryptography</li>
@@ -195,7 +198,7 @@
         </div>
         <div class="disciplines__cards">
           <div class="disciplines__card">
-            <img src="/Uniguru/img/disciplines/image-startup.jpg" alt="" />
+            <img src="/img/disciplines/image-startup.jpg" alt="" />
             <p class="disciplines__card-title">Startups</p>
             <ul class="disciplines__list">
               <li>Product management</li>
@@ -208,7 +211,7 @@
             <button class="btn"><a href="#form">Apply</a></button>
           </div>
           <div class="disciplines__card">
-            <img src="/Uniguru/img/disciplines/image-it.jpg" alt="" />
+            <img src="/img/disciplines/image-it.jpg" alt="" />
             <p class="disciplines__card-title">IT</p>
             <ul class="disciplines__list">
               <li>Software/application development</li>
@@ -239,33 +242,33 @@
         </h2>
         <div class="steps__items">
           <div class="steps__item">
-            <img src="./img/steps/1.svg" alt="" />
+            <img src="/img/steps/1.svg" alt="" />
             <div class="steps__icon-1">
-              <img src="./img/steps/icon-pencil.svg" alt="" />
+              <img src="/img/steps/icon-pencil.svg" alt="" />
             </div>
             <p class="steps__text-1">
               Fill in application form and sign a contract
             </p>
           </div>
           <div class="steps__arrow">
-            <img src="./img/steps/icon-arrow.svg" alt="" />
+            <img src="/img/steps/icon-arrow.svg" alt="" />
           </div>
           <div class="steps__item">
-            <img src="./img/steps/2.svg" alt="" />
+            <img src="/img/steps/2.svg" alt="" />
             <div class="steps__icon-2">
-              <img src="./img/steps/icon-list.svg" alt="" />
+              <img src="/img/steps/icon-list.svg" alt="" />
             </div>
             <p class="steps__text-2">
               Review list of candidates and define specific requirements
             </p>
           </div>
           <div class="steps__arrow">
-            <img src="./img/steps/icon-arrow.svg" alt="" />
+            <img src="/img/steps/icon-arrow.svg" alt="" />
           </div>
           <div class="steps__item">
-            <img src="./img/steps/3.svg" alt="" />
+            <img src="/img/steps/3.svg" alt="" />
             <div class="steps__icon-3">
-              <img src="./img/steps/icon-plus.svg" alt="" />
+              <img src="/img/steps/icon-plus.svg" alt="" />
             </div>
             <p class="steps__text-3">
               Make a final choice from a short list of candidates
@@ -275,32 +278,155 @@
       </section>
       <section id="portfolio">
         <h2 class="portfolio__title">Portfolio</h2>
-        <div class="slider">
-          <div class="portfolio__cards">
-            <div class="portfolio__card">
-              <div class="portfolio__header">
-                <h3>Teacher 1</h3>
-                <img
-                  src="/img/portfolio/icon-portfolio_logo.svg"
-                  alt="logo"
-                  width="40"
-                  height="61"
-                />
-              </div>
-              <div class="portfolio__description">
-                <p>Discipline</p>
-                <p>IT</p>
-                <p>Course</p>
-                <p>Data Science</p>
-                <p>Experience</p>
-                <p>
-                  5+ years of leading data science project in Google and Airbnb
-                </p>
-                <p>Language</p>
-                <p>English</p>
-                <p>Envolvement</p>
-                <p>mentorship and short-term</p>
-              </div>
+        <div class="portfolio__slider">
+          <div class="portfolio__card">
+            <div class="portfolio__header">
+              <h3>Teacher 1</h3>
+              <img
+                src="/img/portfolio/icon-portfolio_logo.svg"
+                alt="logo"
+                width="40"
+                height="61"
+              />
+            </div>
+            <div class="portfolio__description">
+              <p>Discipline</p>
+              <p>IT</p>
+              <p>Course</p>
+              <p>Data Science</p>
+              <p>Experience</p>
+              <p>
+                5+ years of leading data science project in Google and Airbnb
+              </p>
+              <p>Language</p>
+              <p>English</p>
+              <p>Envolvement</p>
+              <p>mentorship and short-term</p>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <div class="portfolio__header">
+              <h3>Teacher 1</h3>
+              <img
+                src="/img/portfolio/icon-portfolio_logo.svg"
+                alt="logo"
+                width="40"
+                height="61"
+              />
+            </div>
+            <div class="portfolio__description">
+              <p>Discipline</p>
+              <p>IT</p>
+              <p>Course</p>
+              <p>Data Science</p>
+              <p>Experience</p>
+              <p>
+                5+ years of leading data science project in Google and Airbnb
+              </p>
+              <p>Language</p>
+              <p>English</p>
+              <p>Envolvement</p>
+              <p>mentorship and short-term</p>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <div class="portfolio__header">
+              <h3>Teacher 1</h3>
+              <img
+                src="/img/portfolio/icon-portfolio_logo.svg"
+                alt="logo"
+                width="40"
+                height="61"
+              />
+            </div>
+            <div class="portfolio__description">
+              <p>Discipline</p>
+              <p>IT</p>
+              <p>Course</p>
+              <p>Data Science</p>
+              <p>Experience</p>
+              <p>
+                5+ years of leading data science project in Google and Airbnb
+              </p>
+              <p>Language</p>
+              <p>English</p>
+              <p>Envolvement</p>
+              <p>mentorship and short-term</p>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <div class="portfolio__header">
+              <h3>Teacher 1</h3>
+              <img
+                src="/img/portfolio/icon-portfolio_logo.svg"
+                alt="logo"
+                width="40"
+                height="61"
+              />
+            </div>
+            <div class="portfolio__description">
+              <p>Discipline</p>
+              <p>IT</p>
+              <p>Course</p>
+              <p>Data Science</p>
+              <p>Experience</p>
+              <p>
+                5+ years of leading data science project in Google and Airbnb
+              </p>
+              <p>Language</p>
+              <p>English</p>
+              <p>Envolvement</p>
+              <p>mentorship and short-term</p>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <div class="portfolio__header">
+              <h3>Teacher 1</h3>
+              <img
+                src="/img/portfolio/icon-portfolio_logo.svg"
+                alt="logo"
+                width="40"
+                height="61"
+              />
+            </div>
+            <div class="portfolio__description">
+              <p>Discipline</p>
+              <p>IT</p>
+              <p>Course</p>
+              <p>Data Science</p>
+              <p>Experience</p>
+              <p>
+                5+ years of leading data science project in Google and Airbnb
+              </p>
+              <p>Language</p>
+              <p>English</p>
+              <p>Envolvement</p>
+              <p>mentorship and short-term</p>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <div class="portfolio__header">
+              <h3>Teacher 1</h3>
+              <img
+                src="/img/portfolio/icon-portfolio_logo.svg"
+                alt="logo"
+                width="40"
+                height="61"
+              />
+            </div>
+            <div class="portfolio__description">
+              <p>Discipline</p>
+              <p>IT</p>
+              <p>Course</p>
+              <p>Data Science</p>
+              <p>Experience</p>
+              <p>
+                5+ years of leading data science project in Google and Airbnb
+              </p>
+              <p>Language</p>
+              <p>English</p>
+              <p>Envolvement</p>
+              <p>mentorship and short-term</p>
             </div>
           </div>
         </div>
@@ -309,11 +435,7 @@
         <h2 class="team__title">Project Team</h2>
         <div class="team__cards">
           <div class="team__card">
-            <img
-              src="../Uniguru/img/team/HR_consultant.png"
-              alt=""
-              class="team__image"
-            />
+            <img src="/img/team/HR_consultant.png" alt="" class="team__image" />
             <p class="team__name">Veronika Soboleva</p>
             <ul class="team__list">
               <li>HR consultant for leading IT companies</li>
@@ -323,7 +445,7 @@
           </div>
           <div class="team__card">
             <img
-              src="../Uniguru/img/team/Startup_consultant.png"
+              src="/img/team/Startup_consultant.png"
               alt=""
               class="team__image"
             />
@@ -343,6 +465,10 @@
     <footer>
       <a class="email" href="mailto:anatolykostarev@gmail.com"></a>
     </footer>
-    <script src="./js/script.js" type="module"></script>
+    <script src="js/script.js"></script>
+    <script src="/js/jquery-1.11.0.min.js"></script>
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/slick/slick.min.js"></script>
+    <script src="/js/slider.js"></script>
   </body>
 </html>

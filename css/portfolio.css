@@ -14,27 +14,32 @@
   text-align: center;
 }
 
-.portfolio__cards {
+.portfolio__slider {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   column-gap: 2.5em;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .portfolio__card {
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
   padding: 1.4375em 1.8125em 1.3125em 1.875em;
-  max-width: 23.3125em;
+  max-width: 373px;
   background: var(--primary-color);
   box-sizing: border-box;
+  cursor: grabbing;
 }
 
 .portfolio__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4.125em;
+  margin-bottom: 3.3125em;
   width: 20em;
 }
 
@@ -67,6 +72,11 @@
 }
 
 .portfolio__description p {
-  margin-bottom: 11px;
+  padding: 7px 0 9px;
   border-bottom: 1px dashed #c4c4c4;
+}
+
+.portfolio__description p:nth-child(n + 9) {
+  padding: 7px 0 0 0;
+  border: 0;
 }
