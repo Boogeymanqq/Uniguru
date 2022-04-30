@@ -1,6 +1,6 @@
 #portfolio {
-  /* display: grid;
-  grid-column: 1 / 4; */
+  display: grid;
+  grid-column: 1 / 4;
   padding: 4.68em 0 6.94em;
   background: var(--secondary_background);
 }
