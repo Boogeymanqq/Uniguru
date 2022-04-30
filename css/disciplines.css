@@ -35,21 +35,12 @@
   color: #003e7c;
 }
 .disciplines__list {
+  list-style-type: disc;
   margin: 7px 0 25px 52px;
   line-height: 30px;
   color: #003e7c;
 }
-.disciplines__btn {
-  margin: 0 auto 37px;
-  padding: 5px 0;
-  display: block;
-  width: 188px;
-  background: #0074e8;
-  border-radius: 60px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #ffffff;
+
+button a {
+  color: var(--primary-color);
 }

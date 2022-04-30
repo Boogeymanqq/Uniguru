@@ -36,6 +36,7 @@
   line-height: 30px;
 }
 .team__list {
+  list-style-type: disc;
   padding-left: 30px;
   font-size: 20px;
   line-height: 30px;

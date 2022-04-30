@@ -22,8 +22,9 @@
 
 .models__item {
   margin: 0 0 44px 0;
-  padding-left: 51px;
-  background: url("/img/flag.svg") left no-repeat;
+  padding-left: 61px;
+  background: url("../img/models/icon-flag.svg") no-repeat;
+  background-position: top -10px left;
 }
 
 .models__text {
