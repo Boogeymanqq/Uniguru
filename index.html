@@ -9,15 +9,13 @@
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/feedback.css" />
+    <link rel="stylesheet" href="/css/popap.css" />
     <link rel="stylesheet" href="/css/disciplines.css" />
-    <link rel="stylesheet" href="/css/models.css" />
     <link rel="stylesheet" href="/css/steps.css" />
     <link rel="stylesheet" href="/css/portfolio.css" />
-    <link rel="stylesheet" href="/css/team.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="slick/slick.css" />
     <link rel="stylesheet" href="slick/slick-theme.css" />
-
     <title>UNIGURU</title>
   </head>
   <body>
@@ -25,7 +23,6 @@
       <nav>
         <ul class="list">
           <li class="items"><a href="#disciplines">Disciplines</a></li>
-          <li class="items"><a href="#models">Involvement Models</a></li>
           <li class="items"><a href="#portfolio">Portfolio</a></li>
           <li class="items"><a href="#team">Project Team</a></li>
         </ul>
@@ -41,112 +38,159 @@
             universities across the world
           </p>
         </div>
-        <div>
+        <div id="form">
           <div class="form__title">
-            <p id="show" class="form__title-lec active">Lecturers</p>
-            <p id="hide" class="form__title-univ">Univercity</p>
+            <p id="show" class="form__title-book active">Book a course</p>
+            <p id="hide" class="form__title-teach">Teach a course</p>
           </div>
-          <div class="formLecture">
-            <form class="form" action="#" method="post" id="form">
+          <div class="formBook">
+            <form class="form" action="#" method="post" id="first-form">
               <div class="form__item">
-                <label class="form__label" for="formName"> Course Name </label>
                 <select class="form__select" name="name" id="formName">
-                  <option value="it" selected>IT project management</option>
-                  <option value="it-2">IT project management-2</option>
-                  <option value="it-3">IT project management-3</option>
+                  <option value="it" selected>Discipline</option>
+                  <option value="it-2">Discipline-2</option>
+                  <option value="it-3">Discipline-3</option>
                 </select>
               </div>
-              <div class="form__toggle">
-                <div class="form__toggle-online">
-                  <input
-                    id="onln"
-                    type="radio"
-                    name="radio"
-                    value="off"
-                    checked
-                  />
-                  <label class="form__toggle-label" for="onln">Online</label>
-                </div>
-                <div class="form__toggle-online">
-                  <input id="ofln" type="radio" name="radio" value="on" />
-                  <label class="form__toggle-label" for="ofln">Offline</label>
-                </div>
-              </div>
               <div class="form__item">
-                <label class="form__label" for="formType"> Type </label>
                 <select class="form__select" name="type" id="formType">
-                  <option value="Semester" selected>Semester</option>
-                  <option value="Semester-2">Semester-2</option>
-                  <option value="Semester-3">Semester-3</option>
+                  <option value="Semester" selected>Duration</option>
+                  <option value="Semester-2">Duration</option>
+                  <option value="Semester-3">Duration</option>
                 </select>
               </div>
               <div class="form__item">
-                <label class="form__label" for="formCountry"> Country </label>
-                <select class="form__select" name="country" id="formCountry">
-                  <option value="Vietnam" selected>Vietnam</option>
-                  <option value="Vietnam-2">Vietnam-2</option>
-                  <option value="Vietnam-3">Vietnam-3</option>
-                </select>
-              </div>
-              <div class="form__item">
-                <label for="formEmail " class="form__label"> Email </label>
                 <input
-                  class="form__email _req _email"
-                  name="email"
-                  id="formEmail"
-                  type="email"
-                />
-              </div>
-              <button type="submit" class="btn">Submit</button>
-            </form>
-          </div>
-
-          <div class="formUniver">
-            <form class="form" action="#" method="post" id="form">
-              <div class="form__item">
-                <label for="formUniv" class="form__label"> Univercity </label>
-                <input
-                  class="form__email _req"
-                  name="Univercity"
-                  id="formUniv"
+                  placeholder="Country"
+                  class="form__email / js-req"
+                  name="country"
+                  id="formCountry"
                   type="text"
                 />
               </div>
               <div class="form__item">
-                <label for="formDep" class="form__label"> Department </label>
                 <input
-                  class="form__email _req"
-                  name="Department"
-                  id="formDep"
-                  type="text"
-                />
-              </div>
-              <div class="form__item">
-                <label for="formName" class="form__label"> Your Name </label>
-                <input
-                  class="form__email _req"
-                  name="name"
+                  placeholder="Name"
+                  class="form__email / js-req"
+                  name="Name"
                   id="formName"
                   type="text"
                 />
               </div>
               <div class="form__item">
-                <label for="formPos" class="form__label"> Position </label>
                 <input
-                  class="form__email _req"
-                  name="position"
-                  id="formPos"
+                  placeholder="Organization"
+                  class="form__email / js-req"
+                  name="organization"
+                  id="formOrganization"
                   type="text"
                 />
               </div>
-              <div class="form__item last">
-                <label for="formEmail" class="form__label"> Email </label>
+              <div class="form__item">
                 <input
-                  class="form__email _req _email"
+                  placeholder="Email"
+                  class="form__email / js-req js-email"
                   name="email"
                   id="formEmail"
                   type="email"
                 />
+              </div>
+              <div class="form__radio">
+                <input
+                  type="radio"
+                  id="formAgree"
+                  name="agree"
+                  class="js-req"
+                />
+                <label class="form__label-radio" for="formAgree"
+                  ><span
+                    >I agree to the
+                    <a class="popap-link" href="#">privacy policy</a>
+                    terms</span
+                  ></label
+                >
+              </div>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+
+          <div class="formTeach">
+            <form class="form" action="#" method="post" id="second-form">
+              <div class="form__item">
+                <select class="form__select" name="name" id="formName">
+                  <option value="it" selected>Discipline</option>
+                  <option value="it-2">Discipline-2</option>
+                  <option value="it-3">Discipline-3</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <input
+                  placeholder="Tenure"
+                  class="form__email / js-second-req"
+                  name="tenure"
+                  id="formTenure"
+                  type="text"
+                />
+              </div>
+              <div class="form__item">
+                <input
+                  placeholder="Language"
+                  class="form__email / js-second-req"
+                  name="language"
+                  id="formLanguage"
+                  type="text"
+                />
+              </div>
+              <div class="form__item">
+                <input
+                  placeholder="Location"
+                  class="form__email / js-second-req"
+                  name="location"
+                  id="formLocation"
+                  type="text"
+                />
+              </div>
+              <div class="form__item">
+                <input
+                  placeholder="Name"
+                  class="form__email / js-second-req"
+                  name="Name"
+                  id="formName"
+                  type="text"
+                />
+              </div>
+              <div class="form__item">
+                <input
+                  placeholder="Email"
+                  class="form__email / js-second-req js-second-email"
+                  name="email"
+                  id="formEmail"
+                  type="email"
+                />
+              </div>
+              <div class="form__item">
+                <input
+                  placeholder="Linkedin"
+                  class="form__email / js-second-req"
+                  name="linkedin"
+                  id="formlinkedin"
+                  type="text"
+                />
+              </div>
+              <div class="form__radio">
+                <input
+                  type="radio"
+                  id="formAgree"
+                  name="agree"
+                  class="js-second-req"
+                />
+                <label class="form__label-radio" for="formAgree"
+                  ><span
+                    >I agree to the
+                    <a href="#">privacy policy</a>
+                    terms</span
+                  ></label
+                >
               </div>
               <button type="submit" class="btn">Submit</button>
             </form>
@@ -157,7 +201,7 @@
         <h2 class="disciplines__title">Disciplines</h2>
         <div class="disciplines__cards">
           <div class="disciplines__card">
-            <img src="/img/disciplines/image-data.jpg" alt="" />
+            <img src="/img/disciplines/data.jpg" alt="" />
             <p class="disciplines__card-title">Data Science</p>
             <ul class="disciplines__list">
               <li>Quantitative methods</li>
@@ -167,38 +211,48 @@
               <li>Machine Learning</li>
               <li>Python programming</li>
             </ul>
-            <button class="btn"><a href="#form">Apply</a></button>
+            <a href="#form"><button class="btn">Apply</button></a>
           </div>
           <div class="disciplines__card">
-            <img src="/img/disciplines/image-design.jpg" alt="" />
-            <p class="disciplines__card-title">Design</p>
+            <img src="/img/disciplines/it.jpg" alt="" />
+            <p class="disciplines__card-title">IT/Computer Science</p>
             <ul class="disciplines__list">
-              <li>UX/UI</li>
-              <li>Visual communications</li>
-              <li>Industrial design</li>
-              <li>Interaction design</li>
-              <li>Brand management</li>
-              <li>Design patterns</li>
+              <li>Software/application development</li>
+              <li>Microservices</li>
+              <li>Cloud computing</li>
+              <li>Control systems</li>
+              <li>Technical support</li>
+              <li>Network management</li>
             </ul>
-            <button class="btn"><a href="#form">Apply</a></button>
+            <a href="#form"><button class="btn">Apply</button></a>
           </div>
           <div class="disciplines__card">
-            <img src="/img/disciplines/image-bitcoin.jpg" alt="" />
+            <img src="/img/disciplines/cryptography.jpg" alt="" />
             <p class="disciplines__card-title">Cryptography</p>
             <ul class="disciplines__list">
               <li>Applied cryptography</li>
-              <li>Cyber Security</li>
               <li>Information theory</li>
               <li>Computer security models</li>
               <li>Blockchain technology</li>
               <li>Cryptocurrencies</li>
             </ul>
-            <button class="btn"><a href="#form">Apply</a></button>
+            <a href="#form"><button class="btn">Apply</button></a>
           </div>
-        </div>
-        <div class="disciplines__cards">
           <div class="disciplines__card">
-            <img src="/img/disciplines/image-startup.jpg" alt="" />
+            <img src="/img/disciplines/cyber.jpg" alt="" />
+            <p class="disciplines__card-title">Cyber Security</p>
+            <ul class="disciplines__list">
+              <li>Trustworthy Systems</li>
+              <li>Applied Cryptography</li>
+              <li>Security engineering</li>
+              <li>System security</li>
+              <li>Network Security</li>
+              <li>Penetration Testing</li>
+            </ul>
+            <a href="#form"><button class="btn">Apply</button></a>
+          </div>
+          <div class="disciplines__card">
+            <img src="/img/disciplines/startups.jpg" alt="" />
             <p class="disciplines__card-title">Startups</p>
             <ul class="disciplines__list">
               <li>Product management</li>
@@ -208,72 +262,26 @@
               <li>Strategic planning</li>
               <li>Team leadership</li>
             </ul>
-            <button class="btn"><a href="#form">Apply</a></button>
+            <a href="#form"><button class="btn">Apply</button></a>
           </div>
           <div class="disciplines__card">
-            <img src="/img/disciplines/image-it.jpg" alt="" />
-            <p class="disciplines__card-title">IT</p>
+            <img src="/img/disciplines/design.jpg" alt="" />
+            <p class="disciplines__card-title">Design</p>
             <ul class="disciplines__list">
-              <li>Software/application development</li>
-              <li>Microservices</li>
-              <li>Cloud computing</li>
-              <li>Control systems</li>
-              <li>Technical support</li>
-              <li>Network management</li>
+              <li>UX/UI</li>
+              <li>Visual communications</li>
+              <li>Industrial design</li>
+              <li>Interaction design</li>
+              <li>Brand management</li>
+              <li>Design patterns</li>
             </ul>
-            <button class="btn"><a href="#form">Apply</a></button>
+            <a href="#form"><button class="btn">Apply</button></a>
           </div>
         </div>
       </section>
-      <section id="models">
-        <h2 class="models__title">Involvement models</h2>
-        <ul class="models__list">
-          <li class="models__item">Semester</li>
-          <li class="models__item">Short-term (2-4 weeks)</li>
-          <li class="models__item">Mentorship</li>
-          <li class="models__item">Event</li>
-        </ul>
-        <p class="models__text">All models can be both on-site and online</p>
-      </section>
       <section id="steps">
-        <h2 class="steps__title">
-          3 easy steps to connect your students with best experts across the
-          world:
-        </h2>
-        <div class="steps__items">
-          <div class="steps__item">
-            <img src="/img/steps/1.svg" alt="" />
-            <div class="steps__icon-1">
-              <img src="/img/steps/icon-pencil.svg" alt="" />
-            </div>
-            <p class="steps__text-1">
-              Fill in application form and sign a contract
-            </p>
-          </div>
-          <div class="steps__arrow">
-            <img src="/img/steps/icon-arrow.svg" alt="" />
-          </div>
-          <div class="steps__item">
-            <img src="/img/steps/2.svg" alt="" />
-            <div class="steps__icon-2">
-              <img src="/img/steps/icon-list.svg" alt="" />
-            </div>
-            <p class="steps__text-2">
-              Review list of candidates and define specific requirements
-            </p>
-          </div>
-          <div class="steps__arrow">
-            <img src="/img/steps/icon-arrow.svg" alt="" />
-          </div>
-          <div class="steps__item">
-            <img src="/img/steps/3.svg" alt="" />
-            <div class="steps__icon-3">
-              <img src="/img/steps/icon-plus.svg" alt="" />
-            </div>
-            <p class="steps__text-3">
-              Make a final choice from a short list of candidates
-            </p>
-          </div>
+        <div>
+          <img src="/img/steps/3 step.png" alt="" />
         </div>
       </section>
       <section id="portfolio">
@@ -431,44 +439,129 @@
           </div>
         </div>
       </section>
-      <section id="team">
-        <h2 class="team__title">Project Team</h2>
-        <div class="team__cards">
-          <div class="team__card">
-            <img src="/img/team/HR_consultant.png" alt="" class="team__image" />
-            <p class="team__name">Veronika Soboleva</p>
-            <ul class="team__list">
-              <li>HR consultant for leading IT companies</li>
-              <li>Launched new University in Barcelona</li>
-              <li>Developed international IT competition</li>
-            </ul>
-          </div>
-          <div class="team__card">
-            <img
-              src="/img/team/Startup_consultant.png"
-              alt=""
-              class="team__image"
-            />
-            <p class="team__name">Pavel Peng</p>
-            <ul class="team__list">
-              <li>Launched startups in China and Russia</li>
-              <li>5+ years in consulting</li>
-              <li>
-                7+ years in top management roles in Airlines and Agriculture
-                companies
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
     </main>
+    <section id="popap" hidden>
+      <div class="popap__block">
+        <button class="popap__close">X</button>
+        <h2 class="popap__title">Privacy Policy</h2>
+        <p class="popap__subtitle">What is this Privacy Policy for?</p>
+        <p class="popap__text">
+          This privacy policy applies to this website [www.passthekeys.co.uk]
+          and is served by Pass the Keys Limited and governs the privacy of the
+          users who choose to use it. The policy sets out the different areas
+          where user privacy is concerned and outlines the obligations &,
+          requirements of the users, the website and website owners. Furthermore
+          the way this website processes, stores and protects user data and
+          information will also be detailed within this policy.
+        </p>
+        <p class="popap__subtitle">The Website</p>
+        <p class="popap__text">
+          This website and its owners take a proactive approach to user privacy
+          and ensure the necessary steps are taken to protect the privacy of its
+          users throughout their visiting experience. This website complies to
+          all UK national laws and requirements for user privacy, as detailed in
+          the General Data Protection Regulation of 2018.
+        </p>
+        <p class="popap__subtitle">Use of Cookies</p>
+        <p class="popap__text">
+          This website uses cookies to better the users experience while
+          visiting the website. This website uses a cookie control system
+          allowing the user on their first visit to the website to allow or
+          disallow the use of cookies on their computer / device. This complies
+          with recent legislation requirements for websites to obtain explicit
+          consent from users before leaving behind or reading files such as
+          cookies on a user’s computer / device. Cookies are small files saved
+          to the user’s computer's hard drive that track, save and store
+          information about the user’s interactions and usage of the website.
+          This allows the website, through its server to provide the users with
+          a tailored experience within this website.
+        </p>
+      </div>
+    </section>
     <footer>
-      <a class="email" href="mailto:anatolykostarev@gmail.com"></a>
+      <div class="footer__items">
+        <div class="footer__item">
+          <svg
+            width="80"
+            height="60"
+            viewBox="0 0 80 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.10302 59.6027H71.9558C75.2539 59.6027 77.9157 57.3266 78.8432 54.1453C78.9406 53.8111 79.0101 53.2925 79.0588 52.6513V41.8719C79.0588 33.5462 79.0588 25.2205 79.0588 16.895L50.8322 35.7355C47.593 37.8916 44.1837 40.7926 40.1471 40.7926C36.9827 40.7926 35.5997 40.5348 32.8593 38.8186C28.6342 36.1723 23.0557 32.2939 18.7764 29.4453L0 16.895C0 25.1692 0 33.4435 0 41.7177V52.6356C0.0415819 53.2275 0.0999445 53.7084 0.180008 54.0265C0.9821 57.212 3.79653 59.6027 7.10302 59.6027Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 7.18155V7.3469C0.00218852 9.0257 0.0517925 9.82166 1.02787 11.3972C2.25053 13.3703 5.85429 15.3439 8.18379 16.8949L28.3809 30.3391C30.1173 31.4949 31.7401 32.5753 33.4765 33.7311C35.4154 35.0215 36.7604 36.3213 39.6839 36.3213C42.1498 36.3213 43.9783 34.8505 45.5207 33.8238C47.2571 32.668 48.8799 31.5876 50.6163 30.4318L70.813 16.9872C72.5414 15.8367 74.233 14.7967 75.9057 13.5923C77.917 12.1442 78.8847 10.2558 79.0588 8.36212V7.08995C78.7398 3.58139 75.8306 0.397705 71.9558 0.397705H7.10302C3.3249 0.397705 0 3.80774 0 7.18155Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="footer__item">
+          <svg
+            width="80"
+            height="66"
+            viewBox="0 0 80 66"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M79.9033 6.81624C80.3493 2.6393 79.3619 -0.0961759 74.7143 0.723536C69.455 1.65086 61.8983 5.04662 57.0959 7.02582C51.406 9.3707 45.7023 11.6335 40.0782 14.0687C28.8892 18.9136 17.6935 23.6917 6.39549 28.5064C-4.86492 33.3051 3.69589 35.5593 10.7379 37.7208C19.3423 40.3623 22.0815 40.9957 29.0645 36.3402C33.5263 33.3656 53.7629 19.5636 58.0527 17.2463C60.531 15.9075 61.2502 17.5878 59.8803 19.3487L47.7938 30.9944C46.5502 32.0612 45.984 32.595 44.7431 33.8734C42.9595 35.7104 42.5263 35.6071 40.0929 38.2695C37.7816 40.7991 33.2041 43.2443 36.4613 47.1057C37.6361 48.4987 55.1828 59.7561 57.9853 61.7751C64.2425 66.2832 69.515 68.1027 71.6493 58.2947C74.0743 47.1509 78.6323 18.7223 79.9033 6.81624Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="footer__item">
+          <svg
+            width="79"
+            height="78"
+            viewBox="0 0 79 78"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10.3661 68.5853C10.623 65.2164 14.4635 58.3918 12.7161 55.7087C5.1638 44.112 6.3753 28.7862 15.5211 17.8632C27.809 3.18785 48.2633 3.28161 62.6195 15.7387C76.1998 27.5227 75.0748 50.9281 61.539 62.5718C54.4162 68.6986 45.5278 71.6442 36.0948 70.4774C31.8824 69.9563 27.1404 68.448 23.5451 66.1861C21.3722 64.8189 13.2341 68.0949 10.3661 68.5853ZM0.882324 78C6.37106 76.6165 11.8553 75.1303 17.3348 73.7175C22.6381 72.35 20.2733 72.4052 25.0098 74.3391C38.4556 79.8292 53.8891 77.7001 65.0215 68.3016C82.8145 53.2794 83.6691 27.4813 67.3106 11.0818C51.1114 -5.15799 24.1028 -3.13014 9.76395 14.4205C2.52604 23.2793 -0.454715 35.2311 1.87597 46.3344C2.44898 49.064 3.24854 51.5434 4.35401 54.1009C6.30983 58.6261 6.6733 56.5582 5.29204 61.6001C4.17769 65.6683 1.25622 74.327 0.882324 78Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M25.5082 21.7712C19.6112 22.8591 18.7049 30.8878 20.5888 35.4412C22.2913 39.557 26.413 44.2586 29.7159 47.3902C35.6424 53.0095 52.4654 62.7958 58.8932 53.4519C60.491 51.1296 61.0486 48.0746 57.8662 46.778C56.3717 46.1689 51.4943 43.6832 50.3049 43.7725C45.9992 44.0957 48.844 52.9652 37.456 44.9905C35.2715 43.4606 33.7126 41.8496 32.0752 39.8196C29.5226 36.6545 29.24 36.5622 32.0503 33.599C34.3027 31.2242 32.244 28.76 31.2037 26.3689C29.9234 23.4261 29.9099 20.9589 25.5082 21.7712Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="footer__item">
+          <svg
+            width="81"
+            height="81"
+            viewBox="0 0 81 81"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M67.5 67.5H55.9286C55.9286 67.5 55.9286 49.6414 55.9286 48.2143C55.9286 44.3571 54 40.5 49.1786 40.4229H49.0243C44.3571 40.4229 42.4286 44.3957 42.4286 48.2143C42.4286 49.9693 42.4286 67.5 42.4286 67.5H30.8571V30.8571H42.4286V35.7943C42.4286 35.7943 46.1507 30.8571 53.6336 30.8571C61.29 30.8571 67.5 36.1221 67.5 46.7871V67.5ZM13.5 20.1921C13.5 17.4921 15.8143 15.4286 19.2857 15.4286C22.7571 15.4286 24.9364 17.4921 25.0714 20.1921C25.0714 22.8921 22.9114 25.0714 19.2857 25.0714C15.8143 25.0714 13.5 22.8921 13.5 20.1921ZM25.0714 30.8571V67.5H13.5V30.8571H25.0714ZM71.3571 0H9.64286C4.32 0 0 4.32 0 9.64286V71.3571C0 76.68 4.32 81 9.64286 81H71.3571C76.68 81 81 76.68 81 71.3571V9.64286C81 4.32 76.68 0 71.3571 0Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="/js/forma.js"></script>
+    <script src="/js/forma-toggle.js"></script>
     <script src="/js/jquery-1.11.0.min.js"></script>
     <script src="/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="/slick/slick.min.js"></script>
     <script src="/js/slider.js"></script>
+    <script src="/js/popap.js"></script>
   </body>
 </html>
