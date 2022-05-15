@@ -3,7 +3,6 @@
   display: grid;
   grid-column: 2 / 3;
   row-gap: 30px;
-  /* justify-content: space-between; */
 }
 
 .disciplines__title {
@@ -18,17 +17,18 @@
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(auto, 373px));
-  /* grid-auto-columns: ; */
-  row-gap: 40px;
+  row-gap: 36px;
   column-gap: 40px;
 }
 .disciplines__card {
-  grid-auto-rows: 1fr;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: auto minmax(auto, 50px) 1fr auto;
   background: #ffffff;
 }
 
 .disciplines__card-title {
-  margin: 24px 0 0 32px;
+  margin: 19px 0 0 32px;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -36,8 +36,9 @@
 }
 .disciplines__list {
   list-style-type: disc;
-  margin: 7px 0 25px 52px;
+  margin: 7px 0 15px 52px;
   line-height: 30px;
+  font-size: 16px;
   color: #003e7c;
 }
 
