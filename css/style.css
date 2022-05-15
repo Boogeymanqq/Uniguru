@@ -4,7 +4,7 @@ html {
 
 body {
   display: grid;
-  grid-template: minmax(auto, 20px) 1fr minmax(auto, 60px) / 1fr;
+  grid-template: minmax(auto, 20px) 1fr minmax(auto, 446px) / 1fr;
   grid-template-areas:
     "header"
     "main"
@@ -21,7 +21,7 @@ a {
 
 .btn {
   display: block;
-  margin: 0 auto 37px;
+  margin: 0 auto 28px;
   padding: 0.3em 4.1em 0.25em 3.9em;
   font-size: 1em;
   font-weight: 500;
@@ -29,7 +29,7 @@ a {
   letter-spacing: -0.02em;
   text-align: center;
   border: 0;
-  border-radius: 3.75em;
+  /* border-radius: 3.75em; */
   outline: none;
   background: var(--button-background);
   color: var(--primary-color);
