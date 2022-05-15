@@ -1,6 +1,14 @@
 footer {
+  display: grid;
   grid-area: footer;
-  /* justify-content: space-between; */
   grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
-  /* row-gap: 31px; */
+}
+
+.footer__items {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 114px;
 }
