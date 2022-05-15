@@ -3,7 +3,21 @@
   grid-auto-flow: column;
   grid-column: 2 / 3;
   justify-content: space-between;
-  grid-template-columns: 1fr minmax(auto, 572px);
+  grid-template-columns: 1fr minmax(auto, 517px);
+}
+
+#form {
+  background: var(--secondary_background);
+  text-align: center;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .form__title {
@@ -12,54 +26,43 @@
   text-align: center;
   font-size: 16px;
   line-height: 30px;
+  color: #ffffff;
+  background-color: var(--primary-background);
+  text-transform: uppercase;
 }
-.form__title-lec {
-  width: 162px;
+.form__title-book {
+  padding: 17px 0 12px;
+  width: 259px;
   cursor: pointer;
 }
 
 .active {
   position: relative;
-  width: 162px;
-  background-color: #0074e8;
+  width: 259px;
+  background-color: var(--secondary_background);
   cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
 }
 
-.active::after {
-  position: absolute;
-  content: "";
-  display: block;
-  background: url("../img/feedback/icon-poligon.svg") center no-repeat;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: -14px;
-  width: 20px;
-  height: 20px;
-}
-
-.form__title-univ {
-  width: 162px;
+.form__title-teach {
+  padding: 17px 0 12px;
+  width: 259px;
   cursor: pointer;
 }
 .form__item {
-  margin: 22px 0;
-}
-.form__label {
-  display: inline-block;
-  width: 120px;
-  font-size: 16px;
-  line-height: 30px;
-  color: #c4c4c4;
+  margin: 25px 0;
 }
 
 .form__select {
   width: 438px;
-  padding: 12px 0 10px 23px;
+  padding: 6px 0 5px 23px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 30px;
   color: #64607d;
-  background: #eeeeee;
+  background: url("/img/feedback/arrow.svg") right 15px top 50% no-repeat;
+  background-color: #eeeeee;
   border: none;
 }
 
@@ -71,56 +74,46 @@
   line-height: 30px;
   color: #64607d;
   background: #eeeeee;
-  padding: 7px 0 4px 23px;
+  padding: 6px 0 5px 23px;
 }
 
-.form__toggle {
-  margin-left: 124px;
-  display: flex;
-  background: #eeeeee;
-  max-width: 150px;
-  border-radius: 20px;
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  color: #64607d;
-}
-
-.form__toggle-online {
-  display: inline-block;
-  width: 46%;
-  text-align: center;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-.form__toggle-label {
-  display: inline-block;
-  cursor: pointer;
-  width: 100%;
-  padding: 6px;
-  user-select: none;
-  border-radius: 20px;
-}
-
-input[type="radio"]:checked + .form__toggle-label {
-  background: #0074e8;
-  color: #ffffff;
-}
-
-.last {
-  margin-bottom: 58px;
-}
-
-.formLecture {
+.formBook {
   display: block;
 }
 
-.formUniver {
+.formTeach {
   display: none;
 }
 
 .form__email.error {
   box-shadow: 0 0 15px red;
+}
+
+.form__radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 25px;
+}
+
+#formAgree {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+}
+
+.form__label-radio {
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  color: #c4c4c4;
+}
+
+label a {
+  text-decoration: underline;
+}
+
+.form__radio.error a {
+  color: red;
 }
