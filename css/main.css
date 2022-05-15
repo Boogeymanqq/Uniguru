@@ -1,6 +1,6 @@
 main {
   display: grid;
-  padding: 97px 0px 263px 0;
+  padding-top: 97px;
   grid-area: main;
   grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
 }
