@@ -6,6 +6,38 @@
   grid-template-columns: 1fr minmax(auto, 517px);
 }
 
+.feedback__text {
+  display: grid;
+  padding-top: 80px;
+}
+
+.feedback__title {
+  background: url("/img/feedback/uniguru-logo.svg") center no-repeat;
+}
+
+.feedback__subtitle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 28px;
+}
+
+.feedback__first-subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 50px;
+
+  max-width: 487px;
+}
+.feedback__second-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 430px;
+}
+
+/* Form */
 #form {
   background: var(--secondary_background);
   text-align: center;
@@ -86,7 +118,7 @@ select::-ms-expand {
 }
 
 .form__email.error {
-  box-shadow: 0 0 15px red;
+  box-shadow: 0 0 15px #ff0000;
 }
 
 .form__radio {
@@ -115,5 +147,15 @@ label a {
 }
 
 .form__radio.error a {
-  color: red;
+  color: #ff0000;
+}
+
+@media (max-width: 375px) {
+  #feedback {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 2 / 3;
+    justify-content: center;
+    grid-template: 1fr 1fr / minmax(auto, 517px);
+  }
 }

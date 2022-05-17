@@ -5,3 +5,32 @@
   align-items: center;
   margin: 331px 0 311px;
 }
+
+.steps__image {
+  display: block;
+  max-width: 100%;
+}
+
+.steps__block {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .steps__image {
+    display: none;
+  }
+  .steps__block {
+    display: grid;
+    justify-items: center;
+  }
+  .steps__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .step__1 {
+  }
+  .step__arrow {
+  }
+}

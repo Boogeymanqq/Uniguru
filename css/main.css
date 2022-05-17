@@ -3,4 +3,14 @@ main {
   padding-top: 97px;
   grid-area: main;
   grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
+  background: url("/img/feedback/logo.svg") no-repeat;
+  background-position: left 220px top 120px;
+}
+
+@media (max-width: 375px) {
+  main {
+    grid-template: 1fr / 1fr minmax(auto, 375px) 1fr;
+    background: url("/img/feedback/logo.svg") no-repeat;
+    background-position: left 258px top 130px;
+  }
 }

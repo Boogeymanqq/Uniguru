@@ -23,8 +23,18 @@
 .disciplines__card {
   display: grid;
   grid-auto-flow: row;
-  grid-template-rows: auto minmax(auto, 50px) 1fr auto;
+  grid-template-rows: auto 1fr;
   background: #ffffff;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.disciplines__text {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .disciplines__card-title {
@@ -42,6 +52,110 @@
   color: #003e7c;
 }
 
+.disciplines-btn {
+  display: block;
+  margin: 0 auto 28px;
+  padding: 0.3em 4.1em 0.25em 3.9em;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.875em;
+  letter-spacing: -0.02em;
+  text-align: center;
+  border: 0;
+  outline: none;
+  background: var(--button-background);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
 button a {
   color: var(--primary-color);
+}
+
+@media (max-width: 375px) {
+  .disciplines__cards {
+    grid-template-columns: 272px;
+    row-gap: 20px;
+  }
+  .disciplines__card {
+    grid-template-columns: 138px 134px;
+    grid-template-rows: 74px;
+  }
+
+  .js-disciplines-card {
+    grid-template-columns: 192px 81px;
+    grid-template-rows: 1fr;
+  }
+
+  .disciplines__card-image {
+    grid-column: 2 / 3;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .disciplines__text {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: grid;
+    padding: 10px 15px 4px 12px;
+    grid-template-rows: 18px 1fr 24px;
+  }
+
+  .js-disciplines-text {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: grid;
+    padding: 12px 0 20px 16px;
+    grid-template-rows: 21px 1fr 28px;
+  }
+
+  .disciplines__card-title {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  .disciplines__list {
+    grid-row: 2 / 3;
+    display: none;
+  }
+
+  .js-disciplines-list {
+    display: block;
+    width: 135px;
+    margin: 1px 0 15px 13px;
+    font-weight: 300;
+    line-height: 18px;
+    font-size: 11px;
+    color: #003e7c;
+  }
+
+  .disciplines-link {
+    grid-row: 3 / 4;
+  }
+
+  .disciplines-btn {
+    margin: 0;
+    /* margin: 0 auto 4px; */
+    padding: 0px 38px;
+    font-size: 12px;
+    display: block;
+    font-weight: 500;
+    line-height: 1.875em;
+    letter-spacing: -0.02em;
+    text-align: center;
+    border: 0;
+    outline: none;
+    background: var(--button-background);
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+
+  .js-btn {
+    padding: 3px 38px;
+  }
 }
