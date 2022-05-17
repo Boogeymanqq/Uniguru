@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 20px;
-  padding: 1.4375em 1.8125em 1.3125em 1.875em;
+  padding: 1.3125em 1.4375em 1.3125em 1.875em;
   max-width: 373px;
   background: var(--primary-color);
   box-sizing: border-box;
@@ -37,14 +37,14 @@
 
 .portfolio__header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 3.3125em;
   width: 20em;
 }
 
 .portfolio__header h3 {
-  margin-right: 172px;
+  margin-left: 82px;
   font-size: 1.5em;
   font-weight: 800;
   line-height: 2.5em;

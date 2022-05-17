@@ -1,19 +1,35 @@
 header {
-  display: grid;
-  grid-area: header;
-  grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
-  padding: 3.06em 0 6.06em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 4.0625em 0 6.5625em;
+  background: var(--primary-background);
 }
 
-nav {
-  grid-column: 2 / 3;
+.sticky {
+  position: sticky;
+  top: 0;
+  padding: 32px 0 34px;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__logo {
+  opacity: 0;
+  text-align: right;
+  user-select: none;
+}
+
+.header__logo img {
+  margin-right: 375px;
 }
 
 .list {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
-  column-gap: 80px;
+  column-gap: 60px;
   list-style: none;
 }
 
@@ -32,5 +48,6 @@ nav {
   font-weight: 500;
   line-height: 1.25em;
   text-align: center;
+  text-transform: uppercase;
   color: var(--secondary-color);
 }

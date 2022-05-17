@@ -9,22 +9,31 @@
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/feedback.css" />
-    <link rel="stylesheet" href="/css/popap.css" />
     <link rel="stylesheet" href="/css/disciplines.css" />
+    <link rel="stylesheet" href="/css/duration.css" />
     <link rel="stylesheet" href="/css/steps.css" />
     <link rel="stylesheet" href="/css/portfolio.css" />
     <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/popap.css" />
     <link rel="stylesheet" href="slick/slick.css" />
     <link rel="stylesheet" href="slick/slick-theme.css" />
     <title>UNIGURU</title>
   </head>
   <body>
-    <header>
+    <header class="js-header-sticky">
+      <div class="header__logo / js-header-logo">
+        <img
+          src="/img/header/icon-headerlogo.svg"
+          alt="logo"
+          width="29"
+          height="43"
+        />
+      </div>
       <nav>
         <ul class="list">
           <li class="items"><a href="#disciplines">Disciplines</a></li>
-          <li class="items"><a href="#portfolio">Portfolio</a></li>
-          <li class="items"><a href="#team">Project Team</a></li>
+          <li class="items"><a href="#duration">Duration</a></li>
+          <li class="items"><a href="#profiles">Profiles</a></li>
         </ul>
       </nav>
     </header>
@@ -321,6 +330,11 @@
           </div>
         </div>
       </section>
+      <section id="duration">
+        <div class="duration__items">
+          <img src="/img/duration/Duration.svg" alt="duration" />
+        </div>
+      </section>
       <section id="steps">
         <img class="steps__image" src="/img/steps/step.svg" alt="" />
         <div class="steps__block">
@@ -350,13 +364,8 @@
         <div class="portfolio__slider">
           <div class="portfolio__card">
             <div class="portfolio__header">
-              <h3>Teacher 1</h3>
-              <img
-                src="/img/portfolio/icon-portfolio_logo.svg"
-                alt="logo"
-                width="40"
-                height="61"
-              />
+              <img src="/img/portfolio/icon-portfolio_professor-1.svg" />
+              <h3>Professor</h3>
             </div>
             <div class="portfolio__description">
               <p>Discipline</p>
@@ -375,13 +384,8 @@
           </div>
           <div class="portfolio__card">
             <div class="portfolio__header">
-              <h3>Teacher 1</h3>
-              <img
-                src="/img/portfolio/icon-portfolio_logo.svg"
-                alt="logo"
-                width="40"
-                height="61"
-              />
+              <img src="/img/portfolio/icon-portfolio_professor-2.svg" />
+              <h3>Professor</h3>
             </div>
             <div class="portfolio__description">
               <p>Discipline</p>
@@ -400,13 +404,8 @@
           </div>
           <div class="portfolio__card">
             <div class="portfolio__header">
-              <h3>Teacher 1</h3>
-              <img
-                src="/img/portfolio/icon-portfolio_logo.svg"
-                alt="logo"
-                width="40"
-                height="61"
-              />
+              <img src="/img/portfolio/icon-portfolio_professor-3.svg" />
+              <h3>Professor</h3>
             </div>
             <div class="portfolio__description">
               <p>Discipline</p>
@@ -425,13 +424,8 @@
           </div>
           <div class="portfolio__card">
             <div class="portfolio__header">
-              <h3>Teacher 1</h3>
-              <img
-                src="/img/portfolio/icon-portfolio_logo.svg"
-                alt="logo"
-                width="40"
-                height="61"
-              />
+              <img src="/img/portfolio/icon-portfolio_professor-1.svg" />
+              <h3>Professor</h3>
             </div>
             <div class="portfolio__description">
               <p>Discipline</p>
@@ -450,13 +444,8 @@
           </div>
           <div class="portfolio__card">
             <div class="portfolio__header">
-              <h3>Teacher 1</h3>
-              <img
-                src="/img/portfolio/icon-portfolio_logo.svg"
-                alt="logo"
-                width="40"
-                height="61"
-              />
+              <img src="/img/portfolio/icon-portfolio_professor-2.svg" />
+              <h3>Professor</h3>
             </div>
             <div class="portfolio__description">
               <p>Discipline</p>
@@ -475,13 +464,8 @@
           </div>
           <div class="portfolio__card">
             <div class="portfolio__header">
-              <h3>Teacher 1</h3>
-              <img
-                src="/img/portfolio/icon-portfolio_logo.svg"
-                alt="logo"
-                width="40"
-                height="61"
-              />
+              <img src="/img/portfolio/icon-portfolio_professor-3.svg" />
+              <h3>Professor</h3>
             </div>
             <div class="portfolio__description">
               <p>Discipline</p>
@@ -501,7 +485,7 @@
         </div>
       </section>
     </main>
-    <section id="popap" hidden>
+    <div id="popap" hidden>
       <div class="popap__block">
         <button class="popap__close">X</button>
         <h2 class="popap__title">Privacy Policy</h2>
@@ -538,7 +522,7 @@
           a tailored experience within this website.
         </p>
       </div>
-    </section>
+    </div>
     <footer>
       <div class="footer__items">
         <div class="footer__item">
@@ -623,6 +607,7 @@
     <script src="/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="/slick/slick.min.js"></script>
     <script src="/js/slider.js"></script>
+    <script src="js/headerScroll.js"></script>
     <script src="/js/popap.js"></script>
     <script src="/js/disciplines.js"></script>
   </body>

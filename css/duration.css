@@ -1,0 +1,7 @@
+#duration {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column: 2 / 3;
+  justify-content: space-between;
+  margin-top: 257px;
+}
