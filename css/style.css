@@ -15,13 +15,21 @@ body {
   color: var(--primary-color);
 }
 
+::placeholder,
+select,
+option {
+  font-family: var(--primary-font);
+  line-height: 30px;
+  color: #64607d;
+}
+
 a {
   text-decoration: none;
 }
 
 .btn {
   display: block;
-  margin: 0 auto 28px;
+  margin: 0 auto;
   padding: 0.3em 4.1em 0.25em 3.9em;
   font-size: 1em;
   font-weight: 500;
@@ -29,7 +37,6 @@ a {
   letter-spacing: -0.02em;
   text-align: center;
   border: 0;
-  /* border-radius: 3.75em; */
   outline: none;
   background: var(--button-background);
   color: var(--primary-color);
