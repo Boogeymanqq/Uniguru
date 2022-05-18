@@ -12,3 +12,25 @@ footer {
   align-items: center;
   gap: 114px;
 }
+
+.footer__image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 375px) {
+  footer {
+    display: grid;
+    grid-area: footer;
+    grid-template: 1fr / 1fr minmax(auto, 375px) 1fr;
+  }
+
+  .footer__items {
+    gap: 37px;
+  }
+
+  .footer__image {
+    max-width: 27px;
+    height: auto;
+  }
+}

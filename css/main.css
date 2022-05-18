@@ -9,8 +9,9 @@ main {
 
 @media (max-width: 375px) {
   main {
+    padding: 0px 10px;
     grid-template: 1fr / 1fr minmax(auto, 375px) 1fr;
-    background: url("/img/feedback/logo.svg") no-repeat;
-    background-position: left 258px top 130px;
+    background: url("/img/feedback/logo-mini.svg") no-repeat;
+    background-position: left 28px top 0px;
   }
 }

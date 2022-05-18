@@ -16,6 +16,10 @@
 }
 
 @media (max-width: 375px) {
+  #steps {
+    margin: 50px 0;
+  }
+
   .steps__image {
     display: none;
   }
@@ -28,6 +32,7 @@
     font-size: 20px;
     line-height: 25px;
     text-align: center;
+    margin-bottom: 20px;
   }
   .step__1 {
   }
