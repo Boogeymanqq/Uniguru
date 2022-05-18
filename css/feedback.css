@@ -30,6 +30,7 @@
 
   max-width: 487px;
 }
+
 .feedback__second-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -58,10 +59,11 @@ select::-ms-expand {
   text-align: center;
   font-size: 16px;
   line-height: 30px;
-  color: #ffffff;
+  color: #fff;
   background-color: var(--primary-background);
   text-transform: uppercase;
 }
+
 .form__title-book {
   padding: 17px 0 12px;
   width: 259px;
@@ -82,8 +84,13 @@ select::-ms-expand {
   width: 259px;
   cursor: pointer;
 }
+
 .form__item {
-  margin: 25px 0;
+  margin-bottom: 25px;
+}
+
+.form__item:nth-child(6) {
+  margin-bottom: 31px;
 }
 
 .form__select {
@@ -96,6 +103,10 @@ select::-ms-expand {
   background: url("/img/feedback/arrow.svg") right 15px top 50% no-repeat;
   background-color: #eeeeee;
   border: none;
+}
+
+.form__select:focus {
+  outline: none;
 }
 
 .form__email {
@@ -111,10 +122,12 @@ select::-ms-expand {
 
 .formBook {
   display: block;
+  padding: 48px 37px 40px 42px;
 }
 
 .formTeach {
   display: none;
+  padding: 48px 37px 40px 42px;
 }
 
 .form__email.error {
@@ -126,7 +139,7 @@ select::-ms-expand {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 6px 0 25px;
+  margin-bottom: 25px;
 }
 
 #formAgree {
