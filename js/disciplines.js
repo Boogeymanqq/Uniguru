@@ -6,6 +6,7 @@ const button = document.querySelectorAll(".disciplines-btn");
 
 for (let i = 0; i <= cardTitle.length - 1; i++) {
   cardTitle[i].addEventListener("click", function (e) {
+    cardTitle[i].classList.toggle("js-disciplines__card-title");
     for (let i = 0; i <= cards.length - 1; i++) {
       const card = cards[i];
 
@@ -23,14 +24,12 @@ for (let i = 0; i <= cardTitle.length - 1; i++) {
     }
     for (let i = 0; i <= textBlock.length; i++) {
       const text = textBlock[i];
-      // console.log(button);
       if (e.target === cardTitle[i]) {
         text.classList.toggle("js-disciplines-text");
       }
     }
     for (let i = 0; i <= button.length; i++) {
       const btn = button[i];
-      // console.log(button);
       if (e.target === cardTitle[i]) {
         btn.classList.toggle("js-btn");
       }
