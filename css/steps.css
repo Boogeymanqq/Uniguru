@@ -11,8 +11,27 @@
   max-width: 100%;
 }
 
+.steps__image-1024 {
+  display: none;
+}
+
 .steps__block {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  #steps {
+    margin: 150px 0 150px;
+    /* padding: 0 95px 0 135px; */
+  }
+
+  .steps__image {
+    display: none;
+  }
+
+  .steps__image-1024 {
+    display: block;
+  }
 }
 
 @media (max-width: 375px) {
@@ -23,6 +42,11 @@
   .steps__image {
     display: none;
   }
+
+  .steps__image-1024 {
+    display: none;
+  }
+
   .steps__block {
     display: grid;
     justify-items: center;
