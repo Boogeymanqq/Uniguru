@@ -11,7 +11,7 @@
   line-height: 60px;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: #fff;
 }
 
 .disciplines__cards {
@@ -26,7 +26,7 @@
   display: grid;
   grid-auto-flow: row;
   grid-template-rows: auto 1fr;
-  background: #ffffff;
+  background: #fff;
 }
 
 .image {
@@ -37,27 +37,42 @@
 .disciplines__text {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  padding: 19px 0 28px 32px;
 }
 
 .disciplines__card-title {
-  margin: 19px 0 0 32px;
+  margin-bottom: 7px;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  color: #003e7c;
+  color: var(--primary-background);
 }
 
 .disciplines__list {
-  list-style-type: disc;
-  margin: 7px 0 15px 52px;
+  font-weight: 300;
+  margin: 0 0 15px 22px;
   line-height: 30px;
   font-size: 16px;
   color: #003e7c;
 }
 
+.disciplines__list li {
+  position: relative;
+}
+
+.disciplines__list li::before {
+  content: ".";
+  position: absolute;
+  top: -9px;
+  left: -15px;
+  color: #003e7c;
+  font-size: 25px;
+}
+
 .disciplines-btn {
+  font-family: var(--primary-font);
   display: block;
-  margin: 0 auto 28px;
+  margin: 0 auto;
   padding: 0.3em 4.1em 0.25em 3.9em;
   font-size: 1em;
   font-weight: 500;
@@ -132,7 +147,6 @@ button a {
     margin: 0;
     background: url("/img/disciplines/arrow-right.svg") no-repeat;
     background-position: right 7px top 6px;
-    transition: 0.2s;
   }
 
   .js-disciplines__card-title {
@@ -150,8 +164,7 @@ button a {
 
   .js-disciplines-list {
     display: block;
-    width: 135px;
-    margin: 1px 0 15px 13px;
+    margin: 1px 0 15px 8px;
     font-weight: 300;
     line-height: 18px;
     font-size: 11px;
@@ -162,9 +175,21 @@ button a {
     grid-row: 3 / 4;
   }
 
+  .disciplines__list li {
+    position: relative;
+  }
+
+  .disciplines__list li::before {
+    content: ".";
+    position: absolute;
+    top: -5px;
+    left: -9px;
+    color: #003e7c;
+    font-size: 18px;
+  }
+
   .disciplines-btn {
     margin: 0;
-    /* margin: 0 auto 4px; */
     padding: 0px 38px;
     font-size: 12px;
     display: block;

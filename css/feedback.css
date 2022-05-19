@@ -107,6 +107,10 @@ select::-ms-expand {
   outline: none;
 }
 
+input {
+  outline: none;
+}
+
 .form__email {
   border: none;
   width: 415px;
@@ -157,6 +161,10 @@ label a {
   text-decoration: underline;
 }
 
+.form__radio a {
+  color: #0074e8;
+}
+
 .form__radio.error a {
   color: #ff0000;
 }
@@ -200,11 +208,28 @@ label a {
 
   /* Form */
 
+  .formBook {
+    display: block;
+    padding: 25px 19px 14px 23px;
+  }
+
+  .formTeach {
+    display: none;
+    padding: 25px 19px 14px 23px;
+  }
+
   .form__title {
     font-size: 9px;
     line-height: 16px;
+    text-align: center;
   }
+
   .form__title-book {
+    padding: 9px 0 5px;
+  }
+
+  .form__title-teach {
+    padding: 9px 0 5px;
   }
 
   .active {
@@ -213,7 +238,11 @@ label a {
   }
 
   .form__item {
-    margin: 14px 0;
+    margin-bottom: 14px;
+  }
+
+  .form__item:nth-child(6) {
+    margin-bottom: 13px;
   }
 
   .form__select {
@@ -241,7 +270,7 @@ label a {
 
   .form__radio {
     gap: 5px;
-    margin: 13px 0 11px;
+    margin-bottom: 11px;
   }
 
   #formAgree {

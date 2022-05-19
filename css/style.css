@@ -28,6 +28,7 @@ a {
 }
 
 .btn {
+  font-family: var(--primary-font);
   display: block;
   margin: 0 auto;
   padding: 0.3em 4.1em 0.25em 3.9em;
@@ -70,7 +71,7 @@ a {
   }
 
   .btn {
-    margin: 0 auto 14px;
+    margin: 0 auto;
     padding: 4px 50px 2px 48px;
     font-size: 12px;
     line-height: 23px;
