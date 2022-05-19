@@ -2,7 +2,7 @@
   padding: 143px 0 135px;
   display: grid;
   grid-column: 2 / 3;
-  row-gap: 30px;
+  row-gap: 40px;
 }
 
 .disciplines__title {
@@ -37,7 +37,7 @@
 .disciplines__text {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  padding: 19px 0 28px 32px;
+  padding: 19px 32px 28px;
 }
 
 .disciplines__card-title {
@@ -90,9 +90,61 @@ button a {
   color: var(--primary-color);
 }
 
+@media (max-width: 1024px) {
+  #disciplines {
+    padding: 150px 0 0 0;
+    row-gap: 70px;
+  }
+
+  .disciplines__title {
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+  }
+
+  .disciplines__cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 342px));
+    row-gap: 50px;
+    column-gap: 64px;
+  }
+
+  .disciplines__card {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto 1fr;
+  }
+
+  .disciplines__text {
+    padding: 17px 29px 26px;
+  }
+
+  .disciplines__card-title {
+    margin-bottom: 6px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .disciplines__list {
+    margin: 0 0 13px 22px;
+    line-height: 27px;
+    font-size: 15px;
+  }
+
+  .disciplines-btn {
+    margin: 0 auto;
+    padding: 4px 67px 4px 63px;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+  }
+}
+
 @media (max-width: 375px) {
   #disciplines {
     padding: 50px 0 0 0;
+    row-gap: 30px;
   }
 
   .disciplines__title {
