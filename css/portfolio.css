@@ -80,3 +80,9 @@
   padding: 7px 0 0 0;
   border: 0;
 }
+
+@media (max-width: 375px) {
+  #profiles {
+    display: none;
+  }
+}
