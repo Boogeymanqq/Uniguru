@@ -3,7 +3,7 @@
   grid-auto-flow: column;
   grid-column: 2 / 3;
   justify-content: space-between;
-  grid-template-columns: 1fr minmax(auto, 517px);
+  grid-template: 709px / 1fr minmax(auto, 517px);
 }
 
 .feedback__text {
@@ -94,7 +94,7 @@ select::-ms-expand {
 .form__select {
   width: 438px;
   padding: 6px 0 5px 23px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 17px;
   line-height: 30px;
   color: #64607d;
@@ -114,7 +114,7 @@ input {
 .form__email {
   border: none;
   width: 415px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: #64607d;
@@ -167,6 +167,122 @@ label a {
 
 .form__radio.error a {
   color: #ff0000;
+}
+
+@media (max-width: 1024px) {
+  #feedback {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 2 / 3;
+    justify-content: center;
+    column-gap: 44px;
+    grid-template: 590px / minmax(auto, 474px) minmax(auto, 426px);
+  }
+
+  .feedback__text {
+    display: grid;
+    grid-template: 100px 126px / 380px;
+    justify-content: end;
+    align-content: center;
+    padding-top: 0;
+  }
+
+  .feedback__title {
+    background: url("/img/feedback/uniguru-logo-mini.svg") no-repeat;
+    background-position: left 50% top 4px;
+    background-size: 380px 63px;
+  }
+
+  .feedback__subtitle {
+    align-self: center;
+    row-gap: 7px;
+  }
+
+  .feedback__first-subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 269px;
+  }
+  .feedback__second-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 291px;
+  }
+
+  /* Form */
+  .form__title {
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .form__title-book {
+    padding: 14px 0 10px;
+  }
+
+  .form__title-teach {
+    padding: 14px 0 10px;
+  }
+
+  .active {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .formBook {
+    display: block;
+    padding: 40px 30px 33px 35px;
+  }
+
+  .formTeach {
+    display: none;
+    padding: 40px 30px 33px 35px;
+  }
+
+  .form__item {
+    margin-bottom: 21px;
+  }
+
+  .form__item:nth-child(6) {
+    margin-bottom: 26px;
+  }
+
+  .form__select {
+    max-width: 361px;
+    padding: 5px 0 4px 12px;
+    font-size: 13px;
+    line-height: 25px;
+    background: url("/img/feedback/arrow.svg") right 15px top 50% no-repeat;
+    background-size: 13px;
+    background-color: #eeeeee;
+  }
+
+  .form__email {
+    max-width: 348px;
+    font-size: 13px;
+    line-height: 25px;
+    padding: 5px 0 4px 12px;
+  }
+
+  .form__email.error {
+    box-shadow: 0 0 12px #ff0000;
+  }
+
+  .form__radio {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  #formAgree {
+    width: 14px;
+    height: 14px;
+  }
+
+  .form__label-radio {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+  }
 }
 
 @media (max-width: 375px) {
