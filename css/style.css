@@ -69,7 +69,7 @@ a {
 
 @media (max-width: 375px) {
   body {
-    grid-template: minmax(auto, 20px) 1fr minmax(auto, 162px) / 1fr;
+    grid-template: minmax(auto, 0) 1fr minmax(auto, 162px) / 1fr;
     grid-template-areas:
       "header"
       "main"
