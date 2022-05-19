@@ -10,7 +10,7 @@
 
 .logo {
   position: absolute;
-  top: 50px;
+  top: 30px;
   left: -135px;
   z-index: -1;
 }
@@ -186,6 +186,7 @@ label a {
     justify-content: center;
     grid-template: 180px 1fr / minmax(auto, 278px);
     row-gap: 26px;
+    padding-top: 50px;
   }
 
   .feedback__text {
@@ -292,5 +293,16 @@ label a {
     font-weight: 500;
     font-size: 8px;
     line-height: 16px;
+  }
+
+  .logo {
+    top: 30px;
+    left: 30px;
+  }
+
+  .logo img {
+    display: block;
+    max-width: 97px;
+    height: auto;
   }
 }
