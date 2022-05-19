@@ -3,8 +3,15 @@ header {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 4.0625em 0 6.5625em;
+  padding: 65px 0 105px;
   background: var(--primary-background);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 50px;
 }
 
 .sticky {

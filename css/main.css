@@ -2,8 +2,8 @@ main {
   display: grid;
   grid-area: main;
   grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
-  background: url("/img/feedback/logo.svg") no-repeat;
-  background-position: left 220px top 120px;
+  /* background: url("/img/feedback/logo.svg") no-repeat;
+  background-position: left 220px top 120px; */
 }
 
 @media (max-width: 1024px) {

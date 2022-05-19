@@ -15,6 +15,12 @@ body {
   color: var(--primary-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
 ::placeholder,
 select,
 option {
