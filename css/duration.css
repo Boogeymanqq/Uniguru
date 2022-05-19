@@ -1,7 +1,7 @@
 #duration {
   display: grid;
   grid-column: 2 / 3;
-  margin-top: 257px;
+  padding-top: 257px;
 }
 
 .duration__items-mini {
