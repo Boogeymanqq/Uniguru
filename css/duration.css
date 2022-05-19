@@ -36,4 +36,10 @@
     display: grid;
     row-gap: 25px;
   }
+
+  .column__logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
