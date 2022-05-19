@@ -18,6 +18,14 @@ footer {
   height: auto;
 }
 
+@media (max-width: 1024px) {
+  footer {
+    display: grid;
+    grid-area: footer;
+    grid-template: 1fr / 1fr minmax(auto, 1024px) 1fr;
+  }
+}
+
 @media (max-width: 375px) {
   footer {
     display: grid;
