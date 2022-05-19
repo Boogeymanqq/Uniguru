@@ -9,7 +9,7 @@ main {
 @media (max-width: 375px) {
   main {
     grid-template: 1fr / 1fr minmax(auto, 375px) 1fr;
-    background: url("/img/feedback/logo-mini.svg") no-repeat;
-    background-position: left 28px top 0px;
+    /* background: url("/img/feedback/logo-mini.svg") no-repeat;
+    background-position: left 28px top 0px; */
   }
 }
