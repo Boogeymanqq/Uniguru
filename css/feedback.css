@@ -1,18 +1,28 @@
 #feedback {
+  position: relative;
   display: grid;
   grid-auto-flow: column;
   grid-column: 2 / 3;
   justify-content: space-between;
+  align-items: flex-start;
   grid-template-columns: 1fr minmax(auto, 517px);
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: -135px;
+  z-index: -1;
 }
 
 .feedback__text {
   display: grid;
-  padding-top: 80px;
+  padding-top: 112px;
 }
 
 .feedback__title {
   background: url("/img/feedback/uniguru-logo.svg") center no-repeat;
+  height: 150px;
 }
 
 .feedback__subtitle {
