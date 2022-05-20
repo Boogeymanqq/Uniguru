@@ -9,16 +9,16 @@ main {
 @media (max-width: 1024px) {
   main {
     grid-template: 1fr / 1fr minmax(auto, 1024px) 1fr;
-    background: url("/img/feedback/logo-1024.svg") no-repeat;
+    /* background: url("/img/feedback/logo-1024.svg") no-repeat;
     background-position: left 40px top 10px;
-    background-size: 239px 362px;
+    background-size: 239px 362px; */
   }
 }
 
 @media (max-width: 375px) {
   main {
     grid-template: 1fr / 1fr minmax(auto, 375px) 1fr;
-    background: url("/img/feedback/logo-mini.svg") no-repeat;
-    background-position: left 28px top 0px;
+    /* background: url("/img/feedback/logo-mini.svg") no-repeat;
+    background-position: left 28px top 0px; */
   }
 }

@@ -5,11 +5,12 @@
   grid-column: 2 / 3;
   justify-content: space-between;
   align-items: flex-start;
+  grid-template: 709px / 1fr minmax(auto, 517px);
 }
 
 .logo {
   position: absolute;
-  top: 50px;
+  top: 30px;
   left: -135px;
   z-index: -1;
 }
@@ -193,7 +194,7 @@ label a {
     grid-template: 100px 126px / 380px;
     justify-content: end;
     align-content: center;
-    padding-top: 0;
+    padding-top: 150px;
   }
 
   .feedback__title {
@@ -301,13 +302,25 @@ label a {
     justify-content: center;
     grid-template: 180px 1fr / minmax(auto, 278px);
     row-gap: 26px;
+    padding-top: 50px;
   }
 
   .feedback__text {
     display: grid;
-    grid-template-rows: 70px 105px;
-    align-content: end;
+    grid-template: 70px 105px / 246px;
+    justify-content: center;
     padding-top: 0;
+  }
+
+  .logo {
+    top: 30px;
+    left: 30px;
+  }
+
+  .logo img {
+    display: block;
+    max-width: 97px;
+    height: auto;
   }
 
   .feedback__title {

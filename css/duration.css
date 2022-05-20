@@ -1,7 +1,7 @@
 #duration {
   display: grid;
   grid-column: 2 / 3;
-  padding-top: 257px;
+  padding-top: 50px;
 }
 
 .duration__image {
@@ -13,9 +13,14 @@
   display: none;
 }
 
+.column__logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 1024px) {
   #duration {
-    padding: 0 42px;
     margin-top: 150px;
   }
 }
