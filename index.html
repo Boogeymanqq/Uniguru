@@ -43,12 +43,19 @@
         </div>
       </div>
     </header>
-    <header class="header__mobile">
-      <span></span>
-      <span></span>
-      <span></span>
-    </header>
-
+    <nav class="mobile / js-mobile">
+      <ul class="mobile__list">
+        <li class="items / js-items"><a href="#disciplines">Disciplines</a></li>
+        <li class="items / js-items"><a href="#duration">Duration</a></li>
+        <li class="items / js-items"><a href="#profiles">Profiles</a></li>
+      </ul>
+      <div class="mobile__close / js-mobile-close"></div>
+    </nav>
+    <div class="header__burger / js-burger">
+      <span js-span-1></span>
+      <span js-span-2></span>
+      <span js-span-3></span>
+    </div>
     <main>
       <section id="feedback">
         <div class="logo">
@@ -593,5 +600,6 @@
     <script src="js/headerScroll.js"></script>
     <script src="/js/popap.js"></script>
     <script src="/js/disciplines.js"></script>
+    <script src="js/mobile-nav.js"></script>
   </body>
 </html>
