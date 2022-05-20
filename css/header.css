@@ -59,6 +59,11 @@ header {
   color: var(--secondary-color);
 }
 
+.header__burger,
+.mobile {
+  display: none;
+}
+
 @media (max-width: 375px) {
   header {
     display: none;
