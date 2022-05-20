@@ -29,7 +29,7 @@
   #duration {
     display: grid;
     grid-column: 2 / 3;
-    margin-top: 50px;
+    padding-top: 50px;
     justify-content: center;
   }
 
@@ -52,5 +52,11 @@
   .duration__items-mini__columns {
     display: grid;
     row-gap: 25px;
+  }
+
+  .column__logo img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }

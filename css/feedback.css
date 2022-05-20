@@ -421,4 +421,15 @@ label a {
     font-size: 8px;
     line-height: 16px;
   }
+
+  .logo {
+    top: 30px;
+    left: 30px;
+  }
+
+  .logo img {
+    display: block;
+    max-width: 97px;
+    height: auto;
+  }
 }
