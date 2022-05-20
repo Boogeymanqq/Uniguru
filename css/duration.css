@@ -21,7 +21,7 @@
 
 @media (max-width: 1024px) {
   #duration {
-    margin-top: 150px;
+    padding-top: 150px;
   }
 }
 
