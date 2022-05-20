@@ -19,12 +19,5 @@ $showIcon.addEventListener("click", showNavigation);
 $hideIcon.addEventListener("click", hideNavigation);
 
 $itemNav.forEach((elem) => {
-  elem.addEventListener("click", function () {
-    document.body.style.overflow = "";
-    $mobileNav.style.transform = "translateX(100%)";
-  });
-  // return elem.removeEventListener("click", function () {
-  //   document.body.style.overflow = "";
-  //   $mobileNav.style.transform = "translateX(100%)";
-  // });
+  elem.addEventListener("click", hideNavigation);
 });
