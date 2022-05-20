@@ -7,10 +7,6 @@ header {
   background: var(--primary-background);
 }
 
-.header__mobile {
-  display: none;
-}
-
 .header__wrapper {
   display: flex;
   justify-content: flex-start;
@@ -68,21 +64,59 @@ header {
     display: none;
   }
 
-  .header__mobile {
+  .mobile {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--primary-background);
+    transform: translateX(100%);
+    transition: all 0.5s;
+    z-index: 100;
+  }
+
+  .mobile__list {
+    display: block;
+    margin: auto;
+    padding-top: 60px;
+    max-width: 105px;
+  }
+
+  .mobile__list .items {
+    margin-bottom: 38px;
+    text-align: center;
+  }
+
+  .mobile__close {
     position: absolute;
+    top: 33px;
+    right: 42px;
+    width: 13px;
+    height: 13px;
+    background: url("/img/header/icon-cross.svg") center no-repeat;
+    background-size: cover;
+  }
+
+  .header__burger {
+    position: fixed;
     top: 33px;
     right: 42px;
     display: block;
     padding: 0;
+    z-index: 99;
   }
 
-  .header__mobile span {
+  .header__burger span {
     display: block;
     width: 17px;
     border: 1px solid #dfdfdf;
   }
 
-  .header__mobile span:nth-child(2) {
+  .header__burger span:nth-child(2) {
     margin: 4px 0;
   }
 }
