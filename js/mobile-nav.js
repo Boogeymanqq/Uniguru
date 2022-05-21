@@ -3,7 +3,9 @@
 const $showIcon = document.querySelector(".js-burger");
 const $hideIcon = document.querySelector(".js-mobile-close");
 const $mobileNav = document.querySelector(".js-mobile");
-const $itemNav = Array.from(document.querySelectorAll(".js-items"));
+const $itemNav = document.querySelectorAll(".js-items");
+
+console.log($itemNav);
 
 function showNavigation() {
   document.body.style.overflow = "hidden";
