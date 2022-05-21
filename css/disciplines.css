@@ -1,5 +1,5 @@
 #disciplines {
-  padding: 303px 0 135px;
+  padding: 237px 0 135px;
   display: grid;
   grid-column: 2 / 3;
   row-gap: 40px;
@@ -92,7 +92,7 @@ button a {
 
 @media (max-width: 1024px) {
   #disciplines {
-    padding: 150px 0 0 0;
+    padding: 95px 0 0 0;
     row-gap: 70px;
   }
 
