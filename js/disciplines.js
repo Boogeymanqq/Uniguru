@@ -1,3 +1,5 @@
+"use strict";
+
 const cardTitle = document.querySelectorAll(".disciplines__card-title");
 const cards = document.querySelectorAll(".disciplines__card");
 const cardList = document.querySelectorAll(".disciplines__list");
