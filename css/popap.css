@@ -10,6 +10,8 @@
   height: 100%;
   z-index: 444;
   background-color: var(--primary-background);
+  user-select: none;
+  overflow-y: auto;
 }
 
 [hidden] {
@@ -26,17 +28,20 @@
 }
 
 .popap__title {
+  margin: 176px 0 61px;
   text-align: center;
   font-weight: 700;
   font-size: 42px;
   line-height: 60px;
 }
 .popap__subtitle {
+  margin-bottom: 50px;
   font-weight: 600;
   font-size: 30px;
   line-height: 35px;
 }
 .popap__text {
+  margin-bottom: 70px;
   font-size: 20px;
   line-height: 35px;
 }

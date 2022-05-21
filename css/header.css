@@ -79,7 +79,7 @@ header {
     bottom: 0;
     left: 0;
     background: var(--primary-background);
-    /* transform: translateX(100%); */
+    transform: translateX(100%);
     transition: all 0.5s;
     z-index: 100;
   }
