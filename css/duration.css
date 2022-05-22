@@ -4,13 +4,14 @@
   padding-top: 50px;
 }
 
-.duration__image {
-  width: 100%;
-  height: 100%;
-}
-
 .duration__items-mini {
   display: none;
+}
+
+.duration__image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .column__logo img {
@@ -52,11 +53,5 @@
   .duration__items-mini__columns {
     display: grid;
     row-gap: 25px;
-  }
-
-  .column__logo img {
-    display: block;
-    width: 100%;
-    height: auto;
   }
 }

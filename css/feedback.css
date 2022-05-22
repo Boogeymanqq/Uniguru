@@ -25,6 +25,10 @@
   height: 150px;
 }
 
+.feedback__title span {
+  opacity: 0;
+}
+
 .feedback__subtitle {
   display: flex;
   align-items: center;
@@ -189,6 +193,17 @@ label a {
     grid-template: 590px / minmax(auto, 474px) minmax(auto, 426px);
   }
 
+  .logo {
+    top: 8px;
+    left: 40px;
+  }
+
+  .logo img {
+    display: block;
+    max-width: 239px;
+    height: auto;
+  }
+
   .feedback__text {
     display: grid;
     grid-template: 100px 126px / 380px;
@@ -198,7 +213,6 @@ label a {
   }
 
   .feedback__title {
-    background: url("/img/feedback/uniguru-logo-mini.svg") no-repeat;
     background-position: left 50% top 4px;
     background-size: 380px 63px;
   }
@@ -324,8 +338,8 @@ label a {
   }
 
   .feedback__title {
-    background: url("/img/feedback/uniguru-logo-mini.svg") no-repeat;
     background-position: left 50% top 10px;
+    background-size: 205px 34px;
   }
 
   .feedback__subtitle {
