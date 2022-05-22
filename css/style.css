@@ -85,7 +85,7 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   body {
     grid-template: minmax(auto, 0) 1fr minmax(auto, 162px) / 1fr;
     grid-template-areas:
