@@ -101,6 +101,112 @@
   color: #dbedfc;
 }
 
+@media (max-width: 425px) {
+  #profiles {
+    display: block;
+    padding: 4px 0 82px;
+  }
+
+  .portfolio__title {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+
+  .portfolio__card {
+    margin: 0 112px;
+    padding: 11px 12px 11px 16px;
+    max-width: 201px;
+  }
+
+  .portfolio__header {
+    margin-bottom: 16px;
+    justify-content: space-between;
+    column-gap: 45px;
+    width: 100%;
+  }
+
+  .portfolio__header img {
+    padding-left: 20px;
+    width: 39px;
+    height: 59px;
+  }
+
+  .portfolio__header h3 {
+    margin-left: 0;
+    padding-right: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+
+  .portfolio__description {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+
+  .portfolio__description p {
+    padding: 4px 0;
+  }
+
+  .portfolio__description p:nth-child(n + 9) {
+    padding: 6px 0 0 0;
+  }
+
+  .slick-dots {
+    bottom: -53px;
+  }
+
+  .slick-dots li {
+    margin: 0;
+  }
+
+  .slick-dots li.slick-active button:before {
+    margin: 0;
+  }
+
+  .slick-dots li button:before {
+    width: 8px;
+    height: 8px;
+    font-size: 8px;
+  }
+
+  .slider-arrow_left {
+    position: absolute;
+    width: 14px;
+    height: 26px;
+    background: url("/img/portfolio/icon-left-arrow.svg") center no-repeat;
+    background-size: cover;
+    left: 42px;
+    cursor: pointer;
+    z-index: 99;
+  }
+
+  .slider-arrow_right {
+    position: absolute;
+    width: 14px;
+    height: 26px;
+    background: url("/img/portfolio/icon-right-arrow.svg") center no-repeat;
+    background-size: cover;
+    right: 42px;
+    cursor: pointer;
+    z-index: 99;
+  }
+
+  .slider-arrow_left:hover,
+  .slider-arrow_right:hover {
+    transform: scale(1.05);
+  }
+}
+
 @media (max-width: 375px) {
   #profiles {
     display: block;

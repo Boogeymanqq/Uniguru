@@ -64,7 +64,7 @@ header {
   display: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   header {
     display: none;
   }
