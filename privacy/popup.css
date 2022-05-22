@@ -12,7 +12,7 @@
 .popup__block {
   min-height: 100%;
   color: #ffffff;
-  max-width: 786px;
+  max-width: 768px;
 }
 
 .popup__title {
@@ -21,12 +21,14 @@
   font-size: 42px;
   line-height: 60px;
 }
+
 .popup__subtitle {
   margin: 70px 0 50px;
   font-weight: 600;
   font-size: 30px;
   line-height: 35px;
 }
+
 p {
   margin-bottom: 40px;
   font-size: 20px;
@@ -81,11 +83,13 @@ li {
   .popup__title {
     font-size: 20px;
   }
+
   .popup__subtitle {
     margin: 45px 0 25px;
     font-size: 14px;
     line-height: 20px;
   }
+
   p {
     margin-bottom: 10px;
     font-size: 12px;
