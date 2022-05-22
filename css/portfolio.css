@@ -231,7 +231,7 @@
   .portfolio__header {
     margin-bottom: 16px;
     justify-content: space-between;
-    column-gap: 45px;
+    column-gap: inherit;
     width: 100%;
   }
 
@@ -337,7 +337,7 @@
   .portfolio__header {
     margin-bottom: 16px;
     justify-content: space-between;
-    column-gap: 45px;
+    column-gap: inherit;
     width: 100%;
   }
 
