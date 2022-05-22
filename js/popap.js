@@ -1,3 +1,5 @@
+"use strict";
+
 const popapOpen = document.querySelector(".popap-link");
 const popapClose = document.querySelector(".popap__close");
 const popap = document.querySelector("#popap");

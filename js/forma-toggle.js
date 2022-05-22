@@ -1,3 +1,5 @@
+"use strict";
+
 const bookBtn = document.getElementById("show");
 const teachBtn = document.getElementById("hide");
 

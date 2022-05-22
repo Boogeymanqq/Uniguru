@@ -13,8 +13,10 @@ function showNavigation() {
 }
 
 function hideNavigation() {
-  document.body.style.overflow = "";
-  $mobileNav.style.transform = "translateX(100%)";
+  setTimeout(() => {
+    document.body.style.overflow = "";
+    $mobileNav.style.transform = "translateX(100%)";
+  }, 350);
 }
 
 $showIcon.addEventListener("click", showNavigation);
