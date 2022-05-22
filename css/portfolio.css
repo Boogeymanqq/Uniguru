@@ -117,9 +117,9 @@
   }
 
   .portfolio__card {
-    margin: 0 82px;
+    margin: 0 87px;
     padding: 11px 12px 11px 16px;
-    min-width: 201px;
+    max-width: 201px;
   }
 
   .portfolio__header {
