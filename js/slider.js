@@ -9,7 +9,7 @@ $(document).ready(function () {
     focusOnSelect: true,
     responsive: [
       {
-        breakpoint: 426,
+        breakpoint: 577,
         settings: {
           focusOnSelect: false,
           slidesToShow: 1,
