@@ -26,7 +26,7 @@ footer {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   footer {
     display: grid;
     grid-area: footer;

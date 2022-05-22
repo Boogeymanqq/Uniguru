@@ -141,7 +141,7 @@ button a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   #disciplines {
     padding: 50px 0 0 0;
     row-gap: 30px;

@@ -295,7 +295,7 @@ label a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   #feedback {
     display: grid;
     grid-auto-flow: row;
