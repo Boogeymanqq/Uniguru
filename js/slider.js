@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".portfolio__slider").slick({
+  $(".profiles__slider").slick({
     infinite: true,
     speed: 500,
     slidesToShow: 3,
