@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const secondForm = document.getElementById("second-form");
   const formReq = document.querySelectorAll(".js-req");
   const formSecondReq = document.querySelectorAll(".js-second-req");
-  // console.log(firstForm);
+
   firstForm.addEventListener("submit", formsend);
   secondForm.addEventListener("submit", formSecondSend);
 
@@ -15,8 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const error = formValidate(firstForm);
 
     const formData = new FormData(firstForm);
-    console.log(formData);
-    console.log(error);
+    // console.log(formData);
+    // console.log(error);
+
     if (error === 0) {
       const response = await fetch("", { method: "POST", body: formData });
       if (response.ok) {
@@ -54,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }
-    console.log(error);
     return error;
   }
 
@@ -106,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }
-    console.log(error);
     return error;
   }
 
