@@ -13,7 +13,8 @@
 .popup__block {
   min-height: 100%;
   color: #ffffff;
-  max-width: 768px;
+  max-width: 1200px;
+  padding: 0 50px;
 }
 
 .popup__title {
@@ -72,7 +73,7 @@ p {
   line-height: 35px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   #popup {
     display: flex;
     flex-direction: column;
@@ -85,7 +86,7 @@ p {
   }
 
   .popup__block {
-    padding: 35px 0 40px;
+    padding: 18px 30px 40px;
     max-width: 300px;
   }
 
