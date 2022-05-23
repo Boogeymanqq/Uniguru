@@ -447,3 +447,9 @@ label a {
     height: auto;
   }
 }
+
+@media screen and (min-width: 426px) and (max-width: 576px) {
+  .logo {
+    left: 130px;
+  }
+}

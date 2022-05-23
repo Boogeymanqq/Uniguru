@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".portfolio__slider").slick({
+  $(".profiles__slider").slick({
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -9,7 +9,7 @@ $(document).ready(function () {
     focusOnSelect: true,
     responsive: [
       {
-        breakpoint: 426,
+        breakpoint: 577,
         settings: {
           focusOnSelect: false,
           slidesToShow: 1,
