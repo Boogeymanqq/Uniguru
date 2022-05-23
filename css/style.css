@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 body {
@@ -27,6 +29,10 @@ option {
   font-family: var(--primary-font);
   line-height: 30px;
   color: #64607d;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 a {
