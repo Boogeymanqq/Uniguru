@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const secondForm = document.getElementById("second-form");
   const formReq = document.querySelectorAll(".js-req");
   const formSecondReq = document.querySelectorAll(".js-second-req");
+  const body = document.querySelector("body");
 
   firstForm.addEventListener("submit", formsend);
   secondForm.addEventListener("submit", formSecondSend);
@@ -15,15 +16,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const error = formValidate(firstForm);
 
     const formData = new FormData(firstForm);
-    // console.log(formData);
-    // console.log(error);
+
+    // for (var pair of formData.entries()) {
+    //   console.log(pair[0] + ", " + pair[1]);
+    // }
 
     if (error === 0) {
-      const response = await fetch("", { method: "POST", body: formData });
+      body.classList.add("loading");
+      const response = await fetch("sendmail.php", {
+        method: "POST",
+        body: formData,
+      });
       if (response.ok) {
+        const result = await response.json();
+        alert(result.message);
         firstForm.reset();
+        body.classList.remove("loading");
       } else {
         alert("Ошибка");
+        body.classList.remove("loading");
       }
     } else {
       alert("Заполните обязательные поля");
@@ -64,14 +75,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const error = formSecondValidate(secondForm);
 
     const formSecondData = new FormData(secondForm);
-    console.log(formSecondData);
-    console.log(error);
+    // console.log(formSecondData);
+    // console.log(error);
     if (error === 0) {
-      const response = await fetch("", {
+      body.classList.add("loading");
+      const response = await fetch("sendmail.php", {
         method: "POST",
         body: formSecondData,
       });
       if (response.ok) {
+        const result = await response.json();
+        alert(result.message);
         secondForm.reset();
       } else {
         alert("Ошибка");
