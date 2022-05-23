@@ -105,6 +105,7 @@
   #profiles {
     display: block;
     padding: 4px 0 82px;
+    max-width: 100%;
   }
 
   .profiles__title {
@@ -211,6 +212,7 @@
   #profiles {
     display: block;
     padding: 4px 0 82px;
+    max-width: 100%;
   }
 
   .profiles__title {
@@ -317,6 +319,7 @@
   #profiles {
     display: block;
     padding: 4px 0 82px;
+    max-width: 100%;
   }
 
   .profiles__title {
@@ -423,6 +426,7 @@
   #profiles {
     display: block;
     padding: 4px 0 82px;
+    max-width: 100%;
   }
 
   .profiles__title {
