@@ -1,4 +1,5 @@
 #popup {
+  grid-area: popup;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +22,14 @@
   font-size: 42px;
   line-height: 60px;
 }
+
+.first {
+  margin: 60px 0 50px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+}
+
 .popup__subtitle {
   margin: 70px 0 50px;
   font-weight: 600;
@@ -33,23 +42,23 @@ p {
   line-height: 35px;
 }
 
-a {
+#popup a {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
 }
 
-ul {
+#popup ul {
   list-style: disc;
 }
 
-li b {
+.popup__first-list li b {
   font-weight: 600;
   font-size: 25px;
   line-height: 35px;
 }
 
-li {
+.popup__first-list li {
   margin: 0 0 40px 60px;
   font-size: 20px;
   line-height: 35px;
@@ -75,12 +84,20 @@ li {
   }
 
   .popup__block {
+    padding: 35px 0 40px;
     max-width: 300px;
   }
 
   .popup__title {
     font-size: 20px;
   }
+
+  .first {
+    margin: 20px 0 25px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   .popup__subtitle {
     margin: 45px 0 25px;
     font-size: 14px;
@@ -92,19 +109,15 @@ li {
     line-height: 20px;
   }
 
-  li b {
+  .popup__first-list li b {
     font-size: 14px;
     line-height: 20px;
   }
 
-  li {
+  .popup__first-list li {
     margin: 0 0 10px 20px;
     font-size: 12px;
     line-height: 20px;
-  }
-
-  .popup__list {
-    padding-bottom: 40px;
   }
 
   .popup__list li {
