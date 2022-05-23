@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  position: relative;
   display: grid;
   grid-template: minmax(auto, 20px) 1fr minmax(auto, 446px) / 1fr;
   grid-template-areas:
@@ -13,6 +14,25 @@ body {
   font-weight: 400;
   background: var(--primary-background);
   color: var(--primary-color);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(51, 51, 51, 0.7) url("/img/feedback/loading.gif") center /
+    60px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+body.loading::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .container {
