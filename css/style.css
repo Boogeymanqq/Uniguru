@@ -38,7 +38,7 @@ body.loading::after {
 }
 
 .container {
-  width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
   box-sizing: content-box;
 }
