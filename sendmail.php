@@ -10,7 +10,7 @@
    $mail->setLanguage('ru', 'PHPMailer-6.6.0/language/');
    $mail->IsHTML(true);
 
-   $mail->setFrom("Uniteguru@gmail.com", "Письмо от Uniteguru");
+   $mail->setFrom("boogeywoogeyqq@gmail.com", "Письмо от Uniteguru");
    $mail->addAddress('boogeymanqq@gmail.com');
    $mail->Subject = 'Это тема письма от Uniteguru';
 
@@ -41,14 +41,14 @@
    }
 
 
-   if(!$mail->send(  )) {
+   if(!$mail->send()) {
       $message = 'Ошибка';
    } else {
-      $message = 'Данные отправлены'
+      $message = 'Данные отправлены';
    }
 
    $response = ['message' => $message];
 
    header('Content-type: application/json');
-   echo json_encode($response)
+   echo json_encode($response);
 ?>
