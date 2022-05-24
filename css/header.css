@@ -23,21 +23,26 @@ header {
 }
 
 .header__logo {
+  flex-basis: 33%;
   opacity: 0;
   text-align: right;
   user-select: none;
 }
 
+.header__logo {
+  display: block;
+}
+
 .header__logo img {
-  margin-right: 375px;
+  display: block;
 }
 
 .list {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  flex-basis: 67%;
   justify-content: center;
+  align-items: center;
   column-gap: 60px;
-  list-style: none;
 }
 
 .items {
@@ -62,6 +67,25 @@ header {
 .header__burger,
 .mobile {
   display: none;
+}
+@media (max-width: 1024px) {
+  header .container {
+    min-width: 1024px;
+  }
+
+  .header__wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container {
+    min-width: 768px;
+  }
+
+  .header__wrapper {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
