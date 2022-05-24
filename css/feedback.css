@@ -309,6 +309,35 @@ label a {
   }
 }
 
+@media (max-width: 768px) {
+  #feedback {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template: 210px 1fr / minmax(auto, 520px);
+    row-gap: 26px;
+    padding-top: 50px;
+  }
+
+  .feedback__text {
+    display: grid;
+    grid-template: 70px 160px / 520px;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .logo {
+    top: 10px;
+    left: 104px;
+  }
+
+  .logo img {
+    display: block;
+    max-width: 160px;
+    height: auto;
+  }
+}
+
 @media (max-width: 576px) {
   #feedback {
     display: grid;
