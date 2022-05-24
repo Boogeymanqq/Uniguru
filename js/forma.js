@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const formData = new FormData(firstForm);
 
-    // for (var pair of formData.entries()) {
-    //   console.log(pair[0] + ", " + pair[1]);
-    // }
+    for (var pair of formData.entries()) {
+      console.log(pair[0] + ", " + pair[1]);
+    }
 
     if (error === 0) {
       body.classList.add("loading");
