@@ -24,6 +24,16 @@
   #duration {
     padding-top: 150px;
   }
+
+  .duration__items {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .duration__items {
+    padding: 15px;
+  }
 }
 
 @media (max-width: 576px) {
