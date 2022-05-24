@@ -21,23 +21,15 @@
 
 @media (max-width: 1024px) {
   #steps {
-    margin: 150px 0 150px;
-  }
-
-  .steps__image {
-    display: none;
-  }
-
-  .steps__image-1024 {
-    display: block;
+    margin: 150px 0;
   }
 }
 
 @media (max-width: 576px) {
   #steps {
     margin: 0 auto;
-    padding: 50px 15px;
-    max-width: 345px;
+    padding: 50px 0;
+    max-width: 100%;
   }
 
   .steps__image {
