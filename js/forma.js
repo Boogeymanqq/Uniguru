@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (error === 0) {
       body.classList.add("loading");
-      const response = await fetch("/sendmail.php", {
+      const response = await fetch("sendmail.php", {
         method: "POST",
         body: formData,
       });
