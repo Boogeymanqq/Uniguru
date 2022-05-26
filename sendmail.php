@@ -2,12 +2,11 @@
 header('Content-type: application/json');
 
    use PHPMailer\PHPMailer\PHPMailer;
+   use PHPMailer\PHPMailer\SMTP;
    use PHPMailer\PHPMailer\Exception;
 
    require '/PHPMailer-6.6.0/src/Exception.php';
    require '/PHPMailer-6.6.0/src/PHPMailer.php';
-
-   $mail->Subject = 'Это тема письма от Uniteguru';
 
    $body = '<h1>Тело письма</h1>';
 
@@ -36,13 +35,22 @@ header('Content-type: application/json');
    }
 
    $mail = new PHPMailer(true);
+
+   $mail->isSMTP();
+   $mail->SMTPAuth = true;
    $mail->CharSet = 'UTF-8';
-   $mail->setLanguage('ru', 'PHPMailer-6.6.0/language/');
-   $mail->IsHTML(true);
+
+   $mail->Host       = 'smtp.gmail.com';
+   $mail->Username   = 'boogeymanqq@gmail.com';
+   $mail->Password   = 'ozqu qcha lehz avjd';
+   $mail->SMTPSecure = 'ssl';
+   $mail->Port = 465;
 
    $mail->setFrom("boogeymanqq@gmail.com", "Письмо от Uniteguru");
    $mail->addAddress('boogeymanqq@gmail.com');
 
+   $mail->IsHTML(true);
+   $mail->Subject = 'Это тема письма от Uniteguru';
    $mail->Body = $body;
 
    if(!$mail->send()) {
@@ -54,4 +62,3 @@ header('Content-type: application/json');
    $response = ['message' => $message];
 
    echo json_encode($response);
-?>
