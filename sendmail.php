@@ -1,58 +1,52 @@
 <?php
-   use PHPMailer\PHPMailer\PHPMailer;
-   use PHPMailer\PHPMailer\Exception;
 
-   require '/PHPMailer-6.6.0/src/Exception.php';
    require '/PHPMailer-6.6.0/src/PHPMailer.php';
+   require '/PHPMailer-6.6.0/src/SMTP';
+   require '/PHPMailer-6.6.0/src/Exception.php';
+   
+   $discipline = $_POST['discipline'];
+   $duration = $_POST['duration'];
+   $country = $_POST['country'];
+   $name = $_POST['Name'];
+   $organization = $_POST['organization'];
+   $email = $_POST['email'];
 
-   // $_POST = json_decode( file_get_contents("php://input"), true );
+   $title = "Заголовок письма";
 
-   // $mail = new PHPMailer(true);
+   $body = "
+      <h2>Новое письмо</h2>
+      <b>Discipline:</b> $discipline<br>
+      <b>Duration:</b> $duration<br><br>
+      <b>Country:</b><br>$country<br>
+      <b>Name:</b> $name<br>
+      <b>Organization:</b> $organization<br>
+      <b>email:</b> $email<br>
+   ";
+
    $mail = new PHPMailer\PHPMailer\PHPMailer();
-   $mail->CharSet = 'UTF-8';
-   $mail->setLanguage('ru', '/PHPMailer-6.6.0/language/');
-   $mail->IsHTML(true);
 
-   $mail->setFrom("boogeymanqq@gmail.com", "Письмо от Uniteguru");
-   $mail->addAddress('boogeymanqq@gmail.com');
-   $mail->Subject = 'Это тема письма от Uniteguru';
+   try {
+      $mail->isSMTP();   
+      $mail->CharSet = "UTF-8";
+      $mail->SMTPAuth   = true;
+      // $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
-   $body = '<h1>Тело письма</h1>';
+      $mail->Host = 'ssl://smtp.gmail.com';
+      $mail->Port = 465;
+      $mail->Username   = 'boogeymanqq@gmail.com';
+      $mail->Password   = 'ozqu qcha lehz avjd';
+      $mail->SMTPSecure = 'ssl';
+      $mail->setFrom("boogeymanqq@gmail.com", "Письмо от Uniteguru");
+      $mail->addAddress('boogeymanqq@gmail.com');
 
-   if(trim(!empty($_POST['discipline']))){
-      $body.='<p><strong>Discipline:</strong> '.$_POST['discipline'].'</p>';
+      $mail->isHTML(true);
+      $mail->Subject = $title;
+      $mail->Body = $body; 
+
+      if ($mail->send()) {$result = "success";} 
+      else {$result = "error";}
+   } catch (Exception $e) {
+      $result = "error";
    }
-
-   if(trim(!empty($_POST['duration']))){
-      $body.='<p><strong>Duration:</strong> '.$_POST['duration'].'</p>';
-   }
-
-   if(trim(!empty($_POST['country']))){
-      $body.='<p><strong>Country:</strong> '.$_POST['country'].'</p>';
-   }
-
-   if(trim(!empty($_POST['Name']))){
-      $body.='<p><strong>Name:</strong> '.$_POST['Name'].'</p>';
-   }
-
-   if(trim(!empty($_POST['organization']))){
-      $body.='<p><strong>Organization:</strong> '.$_POST['organization'].'</p>';
-   }
-
-   if(trim(!empty($_POST['email']))){
-      $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
-   }
-
-   $mail->Body = $body;
-
-   if(!$mail->send()) {
-      $message = 'Ошибка';
-   } else {
-      $message = 'Данные отправлены';
-   }
-
-   $response = ['message' => $message];
- 
-   header('Content-type: application/json');
-   echo json_encode($response);
+   echo json_encode(["message" => $result]);
 ?>
