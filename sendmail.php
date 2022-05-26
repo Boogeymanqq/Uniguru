@@ -5,7 +5,10 @@
    require '/PHPMailer-6.6.0/src/Exception.php';
    require '/PHPMailer-6.6.0/src/PHPMailer.php';
 
-   $mail = new PHPMailer(true);
+   // $_POST = json_decode( file_get_contents("php://input"), true );
+
+   // $mail = new PHPMailer(true);
+   $mail = new PHPMailer\PHPMailer\PHPMailer();
    $mail->CharSet = 'UTF-8';
    $mail->setLanguage('ru', '/PHPMailer-6.6.0/language/');
    $mail->IsHTML(true);
