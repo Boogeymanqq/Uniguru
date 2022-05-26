@@ -25,9 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.add("loading");
       const response = await fetch("/sendmail.php", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
         body: formData,
       });
       if (response.ok) {
@@ -36,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         firstForm.reset();
         body.classList.remove("loading");
       } else {
-        alert("Ошибка");
+        alert("Ошибка...");
         body.classList.remove("loading");
       }
     } else {
