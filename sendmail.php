@@ -11,7 +11,6 @@ header('Content-type: application/json');
    $mail->CharSet = 'UTF-8';
    $mail->setLanguage('ru', 'PHPMailer-6.6.0/language/');
    $mail->IsHTML(true);
-   $mail->Body = $body;
 
    $mail->setFrom("boogeywoogeyqq@gmail.com", "Письмо от Uniteguru");
    $mail->addAddress('boogeymanqq@gmail.com', '123');
@@ -43,6 +42,7 @@ header('Content-type: application/json');
       $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
    }
 
+   $mail->Body = $body;
 
    if(!$mail->send()) {
       $message = 'Ошибка';
