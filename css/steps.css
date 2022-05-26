@@ -46,6 +46,7 @@
   }
 
   .steps__title {
+    max-width: 345px;
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
