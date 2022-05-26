@@ -16,6 +16,7 @@ body {
   font-weight: 400;
   background: var(--primary-background);
   color: var(--primary-color);
+  user-select: none;
 }
 
 body::after {
@@ -53,6 +54,11 @@ option {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 a {
