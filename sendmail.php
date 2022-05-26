@@ -1,8 +1,5 @@
 <?php
-header('Content-type: application/json');
-
    use PHPMailer\PHPMailer\PHPMailer;
-   use PHPMailer\PHPMailer\SMTP;
    use PHPMailer\PHPMailer\Exception;
 
    require '/PHPMailer-6.6.0/src/Exception.php';
