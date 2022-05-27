@@ -4,9 +4,9 @@ header('Content-type: application/json');
    use PHPMailer\PHPMailer\Exception;
    use PHPMailer\PHPMailer\SMTP;
 
-   require 'PHPMailer/src/PHPMailer.php';
-   require 'PHPMailer/src/Exception.php';
-   require 'PHPMailer/src/SMTP.php';
+   require 'PHPMailer/PHPMailer.php';
+   require 'PHPMailer/Exception.php';
+   require 'PHPMailer/SMTP.php';
 
    $mail = new PHPMailer(true);
    $mail->CharSet = 'UTF-8';
