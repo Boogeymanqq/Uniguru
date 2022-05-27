@@ -7,20 +7,45 @@
 
    $mail = new PHPMailer(true);
    $mail->CharSet = 'UTF-8';
+   $mail->IsHTML(true);
 
-   $discipline = $_POST['discipline'];
-   $duration = $_POST['duration'];
-   $country = $_POST['country'];
-   $name = $_POST['Name'];
-   $organization = $_POST['organization'];
-   $email = $_POST['email'];
+   $body = '<h1>Тело письма</h1>';
 
-   $body = $discipline . ' ' . $duration . ' ' . $country . ' ' . $name . ' ' . $organization . ' ' . $email;
-   $theme = '[Тема сайта]';
+   if(trim(!empty($_POST['discipline']))){
+      $body.='<p><strong>Discipline:</strong> '.$_POST['discipline'].'</p>';
+   }
 
-   $mail->setFrom('boogeymanqq@gmail.com', 'Mailer');
+   if(trim(!empty($_POST['duration']))){
+      $body.='<p><strong>Duration:</strong> '.$_POST['duration'].'</p>';
+   }
+
+   if(trim(!empty($_POST['country']))){
+      $body.='<p><strong>Country:</strong> '.$_POST['country'].'</p>';
+   }
+
+   if(trim(!empty($_POST['Name']))){
+      $body.='<p><strong>Name:</strong> '.$_POST['Name'].'</p>';
+   }
+
+   if(trim(!empty($_POST['organization']))){
+      $body.='<p><strong>Organization:</strong> '.$_POST['organization'].'</p>';
+   }
+
+   if(trim(!empty($_POST['email']))){
+      $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
+   }
+
+   $mail->setFrom('boogeymanqq@yandex.ru', 'Mailer');
    $mail->addAddress('boogeymanqq@gmail.com');
-   $mail->Subject = $theme;
+   $mail->Subject = 'Это тема письма от Uniteguru';
    $mail->Body = $body;
 
-   $mail->send();
+   if(!$mail->send()) {
+      $message = 'Ошибка';
+   } else {
+      $message = 'Данные отправлены';
+   }
+
+   $response = ['message' => $message];
+
+   echo json_encode($response);
