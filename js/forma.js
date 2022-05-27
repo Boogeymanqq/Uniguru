@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const body = document.querySelector("body");
 
   firstForm.addEventListener("submit", formsend);
-  // secondForm.addEventListener("submit", formSecondSend);
+  secondForm.addEventListener("submit", formSecondSend);
 
   async function formsend(e) {
     e.preventDefault();
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (error === 0) {
       body.classList.add("loading");
-      const response = await fetch("sendmail.php", {
+      const response = await fetch("/sendmail.php", {
         method: "POST",
         body: formData,
       });
@@ -69,57 +69,59 @@ document.addEventListener("DOMContentLoaded", function () {
     return error;
   }
 
-  // async function formSecondSend(e) {
-  //   e.preventDefault();
+  async function formSecondSend(e) {
+    e.preventDefault();
 
-  //   const error = formSecondValidate(secondForm);
+    const error = formSecondValidate(secondForm);
 
-  //   const formSecondData = new FormData(secondForm);
-  //   if (error === 0) {
-  //     body.classList.add("loading");
-  //     const response = await fetch("", {
-  //       method: "POST",
-  //       body: formSecondData,
-  //     });
-  //     if (response.ok) {
-  //       const result = await response.json();
-  //       alert(result.message);
-  //       secondForm.reset();
-  //     } else {
-  //       alert("Ошибка");
-  //     }
-  //   } else {
-  //     alert("Заполните обязательные поля");
-  //   }
-  // }
+    const formSecondData = new FormData(secondForm);
+    if (error === 0) {
+      body.classList.add("loading");
+      const response = await fetch("/sendmail.php", {
+        method: "POST",
+        body: formSecondData,
+      });
+      if (response.ok) {
+        const result = await response.json();
+        alert(result.message);
+        secondForm.reset();
+        body.classList.remove("loading");
+      } else {
+        alert("Ошибка");
+        body.classList.remove("loading");
+      }
+    } else {
+      alert("Заполните обязательные поля");
+    }
+  }
 
-  // function formSecondValidate(secondForm) {
-  //   let error = 0;
+  function formSecondValidate(secondForm) {
+    let error = 0;
 
-  //   for (let i = 0; i < formSecondReq.length; i++) {
-  //     const input = formSecondReq[i];
-  //     formRemoveError(input);
+    for (let i = 0; i < formSecondReq.length; i++) {
+      const input = formSecondReq[i];
+      formRemoveError(input);
 
-  //     if (input.classList.contains("js-second-email")) {
-  //       if (emailTest(input)) {
-  //         formAddError(input);
-  //         error++;
-  //       }
-  //     } else if (
-  //       input.getAttribute("type") === "radio" &&
-  //       input.checked === false
-  //     ) {
-  //       formAddError(input);
-  //       error++;
-  //     } else {
-  //       if (input.value === "") {
-  //         formAddError(input);
-  //         error++;
-  //       }
-  //     }
-  //   }
-  //   return error;
-  // }
+      if (input.classList.contains("js-second-email")) {
+        if (emailTest(input)) {
+          formAddError(input);
+          error++;
+        }
+      } else if (
+        input.getAttribute("type") === "radio" &&
+        input.checked === false
+      ) {
+        formAddError(input);
+        error++;
+      } else {
+        if (input.value === "") {
+          formAddError(input);
+          error++;
+        }
+      }
+    }
+    return error;
+  }
 
   function formAddError(input) {
     input.parentElement.classList.add("error");

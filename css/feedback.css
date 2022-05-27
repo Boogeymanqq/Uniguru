@@ -5,7 +5,7 @@
   grid-column: 2 / 3;
   justify-content: space-between;
   align-items: flex-start;
-  grid-template: 709px / 1fr minmax(auto, 517px);
+  grid-template: 1fr / 1fr minmax(auto, 517px);
 }
 
 .logo {
@@ -190,7 +190,7 @@ label a {
     grid-column: 2 / 3;
     justify-content: center;
     column-gap: 44px;
-    grid-template: 590px / minmax(auto, 474px) minmax(auto, 426px);
+    grid-template: 1fr / minmax(auto, 474px) minmax(auto, 426px);
   }
 
   .logo {
