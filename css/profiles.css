@@ -104,12 +104,38 @@
 @media (max-width: 1024px) {
   #profiles {
     display: block;
-    padding: 4px 0 82px;
+    padding: 58px 0 85px;
     max-width: 100%;
   }
 
+  .profiles__card {
+    padding: 15px 22px 16px 23px;
+  }
+
   .profiles__header {
+    margin-bottom: 28px;
     width: 100%;
+  }
+
+  .profiles__header h3 {
+    margin-left: 63px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+
+  .profiles__description {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+
+  .profiles__description p {
+    padding: 4px 0 5px;
   }
 }
 
