@@ -3,25 +3,79 @@
   grid-column: 2 / 3;
   justify-items: center;
   align-items: center;
-  margin: 331px 0 311px;
+  padding: 331px 0 311px;
 }
 
-.steps__image {
+.steps__title {
+  margin: 0 auto;
+  max-width: 860px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.steps__gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-right: 37px;
+  max-width: 1200px;
+}
+
+.steps__arrow {
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+
+.steps__gallery img {
   display: block;
-  max-width: 100%;
-}
-
-.steps__image-1024 {
-  display: none;
-}
-
-.steps__block {
-  display: none;
+  width: 100%;
 }
 
 @media (max-width: 1024px) {
   #steps {
-    margin: 150px 0;
+    padding: 150px 0;
+  }
+
+  .steps__title {
+    max-width: 635px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  .steps__gallery {
+    padding-right: 0;
+  }
+
+  .steps__img img {
+    max-width: 220px;
+    height: auto;
+  }
+
+  .steps__arrow {
+    top: 10px;
+    left: 12px;
+  }
+
+  .steps__arrow img {
+    max-width: 49px;
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  #steps {
+    padding: 100px 0;
+  }
+
+  .steps__gallery {
+    padding-right: 24px;
   }
 }
 
@@ -32,19 +86,6 @@
     max-width: 100%;
   }
 
-  .steps__image {
-    display: none;
-  }
-
-  .steps__image-1024 {
-    display: none;
-  }
-
-  .steps__block {
-    display: grid;
-    justify-items: center;
-  }
-
   .steps__title {
     max-width: 345px;
     font-weight: 700;
@@ -52,5 +93,36 @@
     line-height: 25px;
     text-align: center;
     margin-bottom: 20px;
+  }
+
+  .steps__gallery {
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  .steps__img {
+    margin-bottom: 0px;
+  }
+
+  .steps__img:nth-child(5) {
+    margin-bottom: 0;
+  }
+
+  .steps__img img {
+    max-width: 142px;
+    height: auto;
+  }
+
+  .steps__arrow {
+    margin: 24px 0 20px;
+    top: 0;
+    left: 7px;
+    transform: rotate(90deg);
+    opacity: 0.5;
+  }
+
+  .steps__arrow img {
+    max-width: 23px;
+    max-height: 29px;
   }
 }
