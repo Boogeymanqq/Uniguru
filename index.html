@@ -91,6 +91,7 @@
           </div>
           <div class="formBook">
             <form
+              name="first"
               class="form"
               action="#"
               method="POST"
@@ -103,16 +104,24 @@
                   name="discipline"
                   id="formDiscipline"
                 >
-                  <option value="Discipline" selected>Discipline</option>
-                  <option value="Discipline-2">Discipline-2</option>
-                  <option value="Discipline-3">Discipline-3</option>
+                  <option value="" disabled selected>Discipline</option>
+                  <option value="Data Science">Data Science</option>
+                  <option value="IT/Computer Science">
+                    IT/Computer Science
+                  </option>
+                  <option value="Cryptography">Cryptography</option>
+                  <option value="Cyber Security">Cyber Security</option>
+                  <option value="Startups">Startups</option>
+                  <option value="Design">Design</option>
                 </select>
               </div>
               <div class="form__item">
                 <select class="form__select" name="duration" id="formDuration">
-                  <option value="Duration" selected>Duration</option>
-                  <option value="Duration-2">Duration-2</option>
-                  <option value="Duration-3">Duration-3</option>
+                  <option value="" disabled selected>Duration</option>
+                  <option value="Short-term">Short-term</option>
+                  <option value="Semester">Semester</option>
+                  <option value="Event">Event</option>
+                  <option value="Mentorship">Mentorship</option>
                 </select>
               </div>
               <div class="form__item">
@@ -171,16 +180,29 @@
           </div>
 
           <div class="formTeach">
-            <form class="form" action="#" method="post" id="second-form">
+            <form
+              name="second"
+              class="form"
+              action="#"
+              method="POST"
+              id="second-form"
+              enctype="application/x-www-form-urlencoded"
+            >
               <div class="form__item">
                 <select
                   class="form__select"
                   name="secondDiscipline"
                   id="formSecondDiscipline"
                 >
-                  <option value="Discipline" selected>Discipline</option>
-                  <option value="Discipline-2">Discipline-2</option>
-                  <option value="Discipline-3">Discipline-3</option>
+                  <option value="" disabled selected>Discipline</option>
+                  <option value="Data Science">Data Science</option>
+                  <option value="IT/Computer Science">
+                    IT/Computer Science
+                  </option>
+                  <option value="Cryptography">Cryptography</option>
+                  <option value="Cyber Security">Cyber Security</option>
+                  <option value="Startups">Startups</option>
+                  <option value="Design">Design</option>
                 </select>
               </div>
               <div class="form__item">
