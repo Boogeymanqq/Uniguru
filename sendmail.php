@@ -1,9 +1,11 @@
 <?php
+header('Content-type: application/json');
    use PHPMailer\PHPMailer\PHPMailer;
    use PHPMailer\PHPMailer\Exception;
 
    require 'PHPMailer/src/PHPMailer.php';
    require 'PHPMailer/src/Exception.php';
+   require 'PHPMailer/src/SMTP.php';
 
    $mail = new PHPMailer(true);
    $mail->CharSet = 'UTF-8';
@@ -35,8 +37,19 @@
       $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
    }
 
-   $mail->setFrom('boogeymanqq@yandex.ru', 'Mailer');
+   $mail->isSMTP();
+   $mail->SMTPAuth   = true;
+
+   $mail->Host       = 'smtp.gmail.com';
+   $mail->Username   = 'boogeymanqq@gmail.com';
+   $mail->Password   = 'kwwjcpphjrnkgpbq';
+   $mail->SMTPSecure = 'ssl'; 
+   $mail->Port       = 465; 
+
+   $mail->setFrom('boogeymanqq@gmail.com', 'Mailer');
+   $mail->addAddress('boogeywoogeyqq@gmail.com');
    $mail->addAddress('boogeymanqq@gmail.com');
+   $mail->addAddress('anatolykostarev@gmail.com');
    $mail->Subject = 'Это тема письма от Uniteguru';
    $mail->Body = $body;
 
@@ -47,5 +60,6 @@
    }
 
    $response = ['message' => $message];
-
+   
    echo json_encode($response);
+?>
