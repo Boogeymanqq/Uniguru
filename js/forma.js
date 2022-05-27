@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         formAddError(input);
         error++;
       } else {
-        if (input.value === "") {
+        if (input.value.trim() === "") {
           formAddError(input);
           error++;
         }
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
         formAddError(input);
         error++;
       } else {
-        if (input.value === "") {
+        if (input.value.trim() === "") {
           formAddError(input);
           error++;
         }
