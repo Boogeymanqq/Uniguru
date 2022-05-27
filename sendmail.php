@@ -12,7 +12,7 @@ header('Content-type: application/json');
    $mail->CharSet = 'UTF-8';
    $mail->IsHTML(true);
 
-   $body = '<h1>Тело письма</h1>';
+   $body = '<h1>UNITEGURU</h1>';
 
    if(isset($_POST['duration'])) {
       if(trim(!empty($_POST['discipline']))){
