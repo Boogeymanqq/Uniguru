@@ -46,6 +46,7 @@ header {
 }
 
 .items {
+  box-sizing: border-box;
   border-bottom: 1px solid var(--primary-color);
   transition: 0.2s;
 }
