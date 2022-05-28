@@ -5,8 +5,6 @@ const $hideIcon = document.querySelector(".js-mobile-close");
 const $mobileNav = document.querySelector(".js-mobile");
 const $itemNav = document.querySelectorAll(".js-items");
 
-console.log($itemNav);
-
 function showNavigation() {
   document.body.style.overflow = "hidden";
   $mobileNav.style.transform = "translateX(0)";
