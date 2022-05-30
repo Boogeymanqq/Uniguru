@@ -5,6 +5,7 @@ header {
   margin: 0 auto;
   padding: 65px 0 105px;
   background: var(--primary-background);
+  transition: 0.2s linear;
 }
 
 .header__wrapper {
@@ -20,17 +21,15 @@ header {
   padding: 32px 0 34px;
   width: 100%;
   z-index: 100;
-}
-
-.header__logo {
-  flex-basis: 33%;
-  opacity: 0;
-  text-align: right;
-  user-select: none;
+  transition: 0.2s linear;
 }
 
 .header__logo {
   display: block;
+  flex-basis: 33%;
+  opacity: 0;
+  text-align: right;
+  user-select: none;
 }
 
 .header__logo img {
@@ -69,6 +68,7 @@ header {
 .mobile {
   display: none;
 }
+
 @media (max-width: 1024px) {
   header .container {
     min-width: 1024px;
