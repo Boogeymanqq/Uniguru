@@ -8,6 +8,13 @@
   grid-template: 1fr / 1fr minmax(auto, 517px);
 }
 
+/* .alert {
+  display: none;
+  margin-top: 15px;
+  color: #ff0000;
+  text-decoration: underline;
+} */
+
 .logo {
   position: absolute;
   top: 30px;
@@ -147,6 +154,10 @@ input {
 }
 
 .form__email.error {
+  box-shadow: 0 0 15px #ff0000;
+}
+
+.form__select.error {
   box-shadow: 0 0 15px #ff0000;
 }
 
