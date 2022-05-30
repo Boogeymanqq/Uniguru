@@ -10,6 +10,17 @@
   user-select: none;
 }
 
+.up {
+  position: fixed;
+  bottom: 100px;
+  right: 150px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 5px;
+  transform: rotate(180deg);
+  opacity: 0;
+}
+
 .popup__block {
   min-height: 100%;
   color: #ffffff;
