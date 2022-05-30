@@ -96,6 +96,11 @@ p {
     user-select: none;
   }
 
+  .up {
+    bottom: 50px;
+    right: 25px;
+  }
+
   .popup__block {
     padding: 18px 30px 40px;
     max-width: 300px;
