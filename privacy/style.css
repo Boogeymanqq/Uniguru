@@ -32,3 +32,9 @@ a {
   --secondary_background: #003e7c;
   --button-background: #0074e8;
 }
+
+.header__privacy {
+  flex-basis: 33%;
+  text-align: left;
+  user-select: none;
+}
