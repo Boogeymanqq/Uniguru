@@ -3,6 +3,7 @@
 const $header = document.querySelector(".js-header-sticky");
 const $sticky = $header.offsetTop;
 const $headerLogo = document.querySelector(".js-header-logo");
+const $navigationItems = document.querySelectorAll(".js-desk-items");
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > $sticky) {
@@ -21,6 +22,20 @@ window.addEventListener("scroll", function () {
   }
 });
 
+function toggleUnderline() {
+  $navigationItems.forEach((e) => {
+    e.style.borderBottom = "1px solid #fff";
+  });
+}
+
 $headerLogo.addEventListener("click", () => {
-  return window.scroll(0, 0);
+  window.scroll(0, 0);
+  toggleUnderline();
+});
+
+$navigationItems.forEach((elem) => {
+  elem.addEventListener("click", () => {
+    toggleUnderline();
+    elem.style.borderBottom = 0;
+  });
 });
