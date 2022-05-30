@@ -14,7 +14,7 @@ header('Content-type: application/json');
 
    $body = '<h1>UNITEGURU</h1>';
 
-   if(isset($_POST['organization'])) {
+   if(isset($_POST["duration"])) {
       if(trim(!empty($_POST['discipline']))){
          $body.='<p><strong>Discipline:</strong> '.$_POST['discipline'].'</p>';
       }

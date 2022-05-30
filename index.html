@@ -91,7 +91,6 @@
           </div>
           <div class="formBook">
             <form
-              name="first"
               class="form"
               action="#"
               method="POST"
@@ -100,7 +99,7 @@
             >
               <div class="form__item">
                 <select
-                  class="form__select"
+                  class="form__select / js-req"
                   name="discipline"
                   id="formDiscipline"
                 >
@@ -116,7 +115,11 @@
                 </select>
               </div>
               <div class="form__item">
-                <select class="form__select" name="duration" id="formDuration">
+                <select
+                  class="form__select / js-req"
+                  name="duration"
+                  id="formDuration"
+                >
                   <option value="" disabled selected>Duration</option>
                   <option value="Short-term">Short-term</option>
                   <option value="Semester">Semester</option>
@@ -175,13 +178,13 @@
                   ></label
                 >
               </div>
-              <button type="submit" class="btn">Submit</button>
+              <button name="first" type="submit" class="btn">Submit</button>
             </form>
+            <p class="alert"></p>
           </div>
 
           <div class="formTeach">
             <form
-              name="second"
               class="form"
               action="#"
               method="POST"
@@ -190,7 +193,7 @@
             >
               <div class="form__item">
                 <select
-                  class="form__select"
+                  class="form__select / js-second-req"
                   name="secondDiscipline"
                   id="formSecondDiscipline"
                 >
@@ -274,7 +277,7 @@
                   ></label
                 >
               </div>
-              <button type="submit" class="btn">Submit</button>
+              <button name="second" type="submit" class="btn">Submit</button>
             </form>
           </div>
         </div>
