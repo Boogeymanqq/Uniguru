@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const formReq = document.querySelectorAll(".js-req");
   const formSecondReq = document.querySelectorAll(".js-second-req");
   const body = document.querySelector("body");
+  // const textAlert = document.querySelector(".alert");
 
   firstForm.addEventListener("submit", formsend);
   secondForm.addEventListener("submit", formSecondSend);
@@ -29,15 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       if (response.ok) {
         const result = await response.json();
+        // textAlert.style.display = "block";
+        // textAlert.textContent = result.message;
         alert(result.message);
         firstForm.reset();
         body.classList.remove("loading");
       } else {
-        alert("Ошибка...");
+        alert("Ошибка");
         body.classList.remove("loading");
+        // textAlert.style.display = "block";
+        // textAlert.textContent = "! Ошибка !";
       }
     } else {
       alert("Заполните обязательные поля");
+      // textAlert.style.display = "block";
+      // textAlert.textContent = "! Заполните обязательные поля !";
     }
   }
 
