@@ -8,13 +8,6 @@
   grid-template: 1fr / 1fr minmax(auto, 517px);
 }
 
-/* .alert {
-  display: none;
-  margin-top: 15px;
-  color: #ff0000;
-  text-decoration: underline;
-} */
-
 .logo {
   position: absolute;
   top: 30px;

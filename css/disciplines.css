@@ -241,7 +241,6 @@ button a {
   }
 
   .disciplines-btn {
-    /* margin: 0; */
     padding: 0px 38px;
     font-size: 12px;
     display: block;
@@ -258,7 +257,6 @@ button a {
 
   .js-btn {
     padding: 3px 42px;
-    /* margin: 0; */
     margin-left: 0;
     font-size: 12px;
     display: block;
