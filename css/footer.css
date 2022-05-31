@@ -10,7 +10,7 @@ footer {
   grid-auto-flow: column;
   justify-content: center;
   align-items: center;
-  gap: 114px;
+  column-gap: 49px;
 }
 
 .footer__image {
