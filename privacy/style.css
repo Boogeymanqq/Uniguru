@@ -38,3 +38,15 @@ a {
   text-align: left;
   user-select: none;
 }
+
+@media (max-width: 1024px) {
+  header {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    max-width: 768px;
+  }
+}
