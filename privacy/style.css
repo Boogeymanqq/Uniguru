@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 body {

@@ -87,7 +87,7 @@ p {
 
   .popup__block {
     padding: 18px 30px 40px;
-    max-width: 300px;
+    max-width: 100%;
   }
 
   .popup__title {
