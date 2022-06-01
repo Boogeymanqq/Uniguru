@@ -78,17 +78,17 @@ header('Content-type: application/json');
    $mail->SMTPSecure = 'ssl'; 
    $mail->Port       = 465; 
 
-   $mail->setFrom('boogeymanqq@gmail.com', 'Mailer');
+   $mail->setFrom('boogeymanqq@gmail.com', 'Uniteguru');
    $mail->addAddress('boogeywoogeyqq@gmail.com');
    $mail->addAddress('boogeymanqq@gmail.com');
    $mail->addAddress('lelka.bybyby@gmail.com');
-   $mail->Subject = 'Это тема письма от Uniteguru';
+   $mail->Subject = 'This is the subject of an email from Uniteguru';
    $mail->Body = $body;
 
    if(!$mail->send()) {
-      $message = 'Ошибка';
+      $message = 'Error!';
    } else {
-      $message = 'Данные отправлены';
+      $message = 'Data sent!';
    }
 
    $response = ['message' => $message];
