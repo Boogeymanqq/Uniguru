@@ -8,6 +8,16 @@
   grid-template: 1fr / 1fr minmax(auto, 517px);
 }
 
+.notification {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.second__notification {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
 .logo {
   position: absolute;
   top: 30px;
@@ -197,6 +207,16 @@ label a {
     grid-template: 1fr / minmax(auto, 474px) minmax(auto, 426px);
   }
 
+  .notification {
+    margin-top: 20px;
+    font-size: 10px;
+  }
+
+  .second__notification {
+    margin-top: 20px;
+    font-size: 10px;
+  }
+
   .logo {
     top: 8px;
     left: 40px;
@@ -296,6 +316,10 @@ label a {
     box-shadow: 0 0 12px #ff0000;
   }
 
+  .form__select.error {
+    box-shadow: 0 0 12px #ff0000;
+  }
+
   .form__radio {
     gap: 8px;
     margin-bottom: 20px;
@@ -321,6 +345,16 @@ label a {
     grid-template: 210px 1fr / minmax(auto, 520px);
     row-gap: 26px;
     padding-top: 50px;
+  }
+
+  .notification {
+    margin-top: 20px;
+    font-size: 10px;
+  }
+
+  .second__notification {
+    margin-top: 20px;
+    font-size: 10px;
   }
 
   .feedback__text {
@@ -350,6 +384,16 @@ label a {
     grid-template: 180px 1fr / minmax(auto, 278px);
     row-gap: 26px;
     padding-top: 50px;
+  }
+
+  .notification {
+    margin-top: 11px;
+    font-size: 8px;
+  }
+
+  .second__notification {
+    margin-top: 11px;
+    font-size: 8px;
   }
 
   .feedback__text {
@@ -450,6 +494,10 @@ label a {
   }
 
   .form__email.error {
+    box-shadow: 0 0 9px #ff0000;
+  }
+
+  .form__select.error {
     box-shadow: 0 0 9px #ff0000;
   }
 

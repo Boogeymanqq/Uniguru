@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const formReq = document.querySelectorAll(".js-req");
   const formSecondReq = document.querySelectorAll(".js-second-req");
   const body = document.querySelector("body");
+  const notification = document.querySelector(".notification");
+  const secondNotification = document.querySelector(".second__notification");
 
   firstForm.addEventListener("submit", formsend);
   secondForm.addEventListener("submit", formSecondSend);
@@ -30,14 +32,22 @@ document.addEventListener("DOMContentLoaded", function () {
       if (response.ok) {
         const result = await response.json();
         alert(result.message);
+        notification.style.color = "#008000";
+        notification.textContent = result.message;
+        setTimeout(() => (notification.textContent = ""), 3000);
         firstForm.reset();
         body.classList.remove("loading");
       } else {
         alert("Error");
+        notification.style.color = "#ff0000";
+        notification.textContent = "Error";
+        setTimeout(() => (notification.textContent = ""), 3000);
         body.classList.remove("loading");
       }
     } else {
       alert("Fill in required fields!");
+      notification.style.color = "#ff0000";
+      notification.textContent = "Fill in required fields!";
     }
   }
 
@@ -84,14 +94,22 @@ document.addEventListener("DOMContentLoaded", function () {
       if (response.ok) {
         const result = await response.json();
         alert(result.message);
+        secondNotification.style.color = "#008000";
+        secondNotification.textContent = result.message;
+        setTimeout(() => (secondNotification.textContent = ""), 3000);
         secondForm.reset();
         body.classList.remove("loading");
       } else {
         alert("Error");
+        secondNotification.style.color = "#ff0000";
+        secondNotification.textContent = "Error";
+        setTimeout(() => (secondNotification.textContent = ""), 3000);
         body.classList.remove("loading");
       }
     } else {
       alert("Fill in required fields!");
+      secondNotification.style.color = "#ff0000";
+      secondNotification.textContent = "Fill in required fields!";
     }
   }
 
