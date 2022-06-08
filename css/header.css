@@ -3,7 +3,7 @@ header {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 65px 0 105px;
+  padding: 40px 0 85px;
   background: var(--primary-background);
   transition: 0.2s linear;
 }
