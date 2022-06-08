@@ -344,7 +344,7 @@ label a {
     justify-content: center;
     grid-template: 210px 1fr / minmax(auto, 520px);
     row-gap: 26px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
   }
 
   .notification {
