@@ -39,7 +39,7 @@
 
 @media (max-width: 1024px) {
   #steps {
-    padding: 150px 0;
+    padding: 150px 0 0 0;
   }
 
   .steps__title {

@@ -70,6 +70,9 @@ header {
 }
 
 @media (max-width: 1024px) {
+  header {
+    padding-bottom: 150px;
+  }
   header .container {
     min-width: 1024px;
   }

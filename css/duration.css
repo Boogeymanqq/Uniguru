@@ -22,7 +22,7 @@
 
 @media (max-width: 1024px) {
   #duration {
-    padding-top: 150px;
+    padding: 150px 0 150px;
   }
 
   .duration__items {
