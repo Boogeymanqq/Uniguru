@@ -1,5 +1,5 @@
 #disciplines {
-  padding: 237px 0 207px;
+  padding: 0px 0 125px;
   display: grid;
   grid-column: 2 / 3;
   row-gap: 40px;
@@ -92,7 +92,7 @@ button a {
 
 @media (max-width: 1024px) {
   #disciplines {
-    padding: 95px 0 0 0;
+    padding: 150px 0 0 0;
     row-gap: 70px;
   }
 
@@ -241,11 +241,11 @@ button a {
   }
 
   .disciplines-btn {
-    padding: 0px 38px;
+    padding: 12px 14px;
     font-size: 12px;
     display: block;
     font-weight: 500;
-    line-height: 1.875em;
+    line-height: 0;
     letter-spacing: -0.02em;
     text-align: center;
     border: 0;
@@ -256,7 +256,7 @@ button a {
   }
 
   .js-btn {
-    padding: 3px 42px;
+    padding: 3px 38px;
     margin-left: 0;
     font-size: 12px;
     display: block;

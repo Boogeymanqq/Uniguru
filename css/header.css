@@ -3,7 +3,7 @@ header {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 65px 0 105px;
+  padding: 40px 0 85px;
   background: var(--primary-background);
   transition: 0.2s linear;
 }
@@ -70,6 +70,9 @@ header {
 }
 
 @media (max-width: 1024px) {
+  header {
+    padding-bottom: 150px;
+  }
   header .container {
     min-width: 1024px;
   }
