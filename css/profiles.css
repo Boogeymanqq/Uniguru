@@ -30,6 +30,7 @@
   margin: 0 20px;
   padding: 1.3125em 1.4375em 1.3125em 1.875em;
   max-width: 373px;
+  /* height: 458px; */
   background: var(--primary-color);
   box-sizing: border-box;
   cursor: grabbing;
