@@ -7,6 +7,8 @@ $(document).ready(function () {
     dots: true,
     arrows: false,
     focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 577,
@@ -15,6 +17,7 @@ $(document).ready(function () {
           slidesToShow: 1,
           arrows: true,
           dots: false,
+          autoplay: false,
           prevArrow: '<div class="slider-arrow slider-arrow_left"></div>',
           nextArrow: '<div class="slider-arrow slider-arrow_right"></div>',
         },

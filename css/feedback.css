@@ -197,6 +197,17 @@ label a {
   color: #ff0000;
 }
 
+@media screen and (min-width: 1205px) and (max-width: 1440px) {
+  .logo {
+    top: 20px;
+    left: -90px;
+  }
+
+  .logo img {
+    width: 80%;
+  }
+}
+
 @media (max-width: 1024px) {
   #feedback {
     display: grid;
