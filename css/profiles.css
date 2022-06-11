@@ -193,6 +193,7 @@
 
   .profiles__description {
     grid-template-rows: 15px 25px 54px 15px 29px;
+    /* grid-template-rows: auto; */
     font-size: 9px;
     font-weight: 400;
     line-height: 12px;
@@ -300,7 +301,8 @@
   }
 
   .profiles__description {
-    grid-template-rows: 15px 25px 54px 15px 29px;
+    /* grid-template-rows: 15px 25px 54px 15px 29px; */
+    grid-template-rows: auto;
     font-size: 9px;
     font-weight: 400;
     line-height: 12px;
