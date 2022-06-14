@@ -376,13 +376,13 @@ label a {
   }
 
   .logo {
-    top: 10px;
-    left: 104px;
+    top: 2px;
+    left: 120px;
   }
 
   .logo img {
     display: block;
-    max-width: 160px;
+    max-width: 140px;
     height: auto;
   }
 }
