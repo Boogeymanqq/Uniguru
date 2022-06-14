@@ -7,8 +7,7 @@ $(document).ready(function () {
     dots: true,
     arrows: false,
     focusOnSelect: true,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
+    autoplay: false,
     adaptiveHeight: true,
     responsive: [
       {
