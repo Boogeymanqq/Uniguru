@@ -70,13 +70,12 @@
 
 .profiles__description p:nth-child(even) {
   font-weight: 500;
+  overflow: auto;
+  scrollbar-width: none;
 }
 
 .profiles__description p {
-  padding: 7px 0 9px;
   border-bottom: 1px dashed #c4c4c4;
-  overflow: auto;
-  scrollbar-width: none;
 }
 
 .profiles__description p::-webkit-scrollbar {
