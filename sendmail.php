@@ -73,15 +73,13 @@ header('Content-type: application/json');
    $mail->SMTPAuth   = true;
 
    $mail->Host       = 'smtp.gmail.com';
-   $mail->Username   = 'boogeymanqq@gmail.com';
-   $mail->Password   = 'kwwjcpphjrnkgpbq';
+   $mail->Username   = 'test@gmail.com';
+   $mail->Password   = '*****************';
    $mail->SMTPSecure = 'ssl'; 
    $mail->Port       = 465; 
 
-   $mail->setFrom('boogeymanqq@gmail.com', 'Uniteguru');
-   $mail->addAddress('boogeywoogeyqq@gmail.com');
-   $mail->addAddress('boogeymanqq@gmail.com');
-   $mail->addAddress('lelka.bybyby@gmail.com');
+   $mail->setFrom('test@gmail.com', 'Uniteguru');
+   $mail->addAddress('test@gmail.com');
    $mail->Subject = 'This is the subject of an email from Uniteguru';
    $mail->Body = $body;
 
